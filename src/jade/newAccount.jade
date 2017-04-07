@@ -1,0 +1,54 @@
+doctype html
+html
+  include ./partials/head.jade
+  body
+    include ./partials/debug.jade
+    #wrapper
+      #content
+        include ./partials/header.jade
+                    
+        main.content
+          .container
+            ol.breadcrumb
+              li: a(href='#') Главная
+              li.active Вход в кабинет
+            h1.heading-title
+              |Создать аккаунт
+          section.new-account.gray-bg
+            .container
+              .account-block.center-block
+                .account-block__header
+                  h2.heading-block.text-center Создать аккаунт на Mfair
+                .account-block__body
+                  //- .social.text-center
+                  //-   span.caption Используя профиль
+                  //-   a(href="#").btn.btn-default.btn-fb
+                  //-     i.mdi.mdi-facebook
+                  //-     |Facebook
+                  form.account-info
+                    //- span.choose или
+                    .form-group
+                      label(for=""): span.required Email:
+                      input(type="email")
+                    .form-group
+                      label(for=""): span.required Пароль:
+                      input(type="password")
+                    .form-group
+                      label(for=""): span.required Имя:
+                      input(type="text")
+                    .form-group
+                      label(for=""): span.required Телефон:
+                      input(type="text")
+                    button(type="button", name="button").btn.btn-default
+                      | Создать
+                .account-block__footer.text-center
+                  .wrap
+                    span Уже зарегестрированы? <a href="#" class="link-m">Войти</a>
+              //- small.
+              //-   Нажимая на кнопку создать через соцсеть, вы принимаете условия Пользовательского соглашения
+                  
+                  
+                  
+      include ./partials/footer.jade
+    include ./partials/popups.jade
+    include ./partials/scripts.jade

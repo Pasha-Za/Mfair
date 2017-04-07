@@ -1,0 +1,42 @@
+doctype html
+html
+  include ./partials/head.jade
+  body.not-found
+    include ./partials/debug.jade
+    #wrapper
+      #content
+        include ./partials/header.jade
+                    
+        main.content
+          .container
+            ol.breadcrumb
+              li: a(href='#') Главная
+              li.active Вход в кабинет
+            h1.heading-title
+              |Вход в кабинет
+          section.new-account.gray-bg
+            .container
+              .account-block.center-block
+                .account-block__header
+                  h2.heading-block.text-center Забыли пароль?
+                .account-block__body
+                  .social.text-center.pass-remember
+                    span.caption Введите адрес вашей электронной почты и мы вышлем пароль
+
+                  form.account-info
+                    .form-group
+                      label(for=""): span Почта:
+                      input(type="email")
+                    button(type="button", name="button").btn.btn-default
+                      | Напомнить
+                .account-block__footer.text-center
+                  .wrap
+                    span Нет аккаунта? <a href="#" class="link-m">Регистрация</a>
+              small.
+                Нажимая на кнопку входа через соцсеть, вы принимаете условия Пользовательского соглашения
+                  
+                  
+                  
+      include ./partials/footer.jade
+    include ./partials/popups.jade
+    include ./partials/scripts.jade

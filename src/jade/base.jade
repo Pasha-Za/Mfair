@@ -1,0 +1,23 @@
+doctype html
+html
+  include ./partials/head.jade
+  body
+    include ./partials/debug.jade
+    #wrapper
+      #content
+        include ./partials/header.jade
+                    
+        main.content.product-card
+          .container
+            ol.breadcrumb
+              li: a(href='#') Главная
+              li: a(href='#') Продажа автомобилей
+              li: a(href='#') Украина
+              li: a(href='#') Land Rover
+              li.active Range Rover
+              
+        
+              
+      include ./partials/footer.jade
+    include ./partials/popups.jade
+    include ./partials/scripts.jade

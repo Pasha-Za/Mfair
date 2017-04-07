@@ -1,0 +1,273 @@
+doctype html
+html
+  include ./partials/head.jade
+  body
+    #fb-root
+    script.
+      (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.8";
+      fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    include ./partials/debug.jade
+    #wrapper
+      #content
+        include ./partials/header.jade
+                    
+        main.content
+          .container
+            ol.breadcrumb
+              li: a(href='#') Главная
+              li.active Блог
+            h1.heading-title
+              |Блог
+              
+          section.news.gray-bg
+            .container
+              .row
+                //- .col-xs-12
+                //-   ul.brand-categories
+                //-     li.active
+                //-       a(href='#')
+                //-         span Все
+                //-     li
+                //-       a(href='#')
+                //-         span Автомобили
+                //-     li
+                //-       a(href='#')
+                //-         span Мотоциклы
+                //-     li
+                //-       a(href='#')
+                //-         span Часы
+                //-     li
+                //-       a(href='#')
+                //-         span Яхтинг
+                //-     li
+                //-       a(href='#')
+                //-         span Авиация
+                //-     li
+                //-       a(href='#')
+                //-         span Гаджеты
+                .col-xs-12.col-md-9.news-list
+                  .row
+                    .col-xs-12.col-sm-6.product-container
+                      .wrap
+                        a(href='#')
+                          figure.new
+                            img(src='img/news-1.jpg', alt='')
+                            small Сегодня в 18:04
+                        .product-container__name
+                          a.link-m(href='#') Как мастера создают известные швейцарские часы
+                        .product-container__link
+                          a.link-m.tag(href='#') авиация
+                    .col-xs-12.col-sm-6.product-container
+                      .wrap
+                        a(href='#')
+                          figure
+                            img(src='img/news-2.jpg', alt='')
+                            small Сегодня в 18:04
+                        .product-container__name
+                          a.link-m(href='#') Как мастера создают известные швейцарские часы
+                        .product-container__link
+                          a.link-m.tag(href='#') механизмы
+                    .col-xs-12.col-sm-6.col-md-4.product-container
+                      .wrap
+                        a(href='#')
+                          figure
+                            img(src='img/news-3.jpg', alt='')
+                            small Сегодня в 18:04
+                        .product-container__name
+                          a.link-m(href='#') Как мастера создают известные швейцарские часы
+                        .product-container__link
+                          a.link-m.tag(href='#') яхтинг
+                    .col-xs-12.col-sm-6.col-md-4.product-container
+                      .wrap
+                        a(href='#')
+                          figure
+                            img(src='img/news-4.jpg', alt='')
+                            small Сегодня в 10:00
+                        .product-container__name
+                          a.link-m(href='#') Как мастера создают известные швейцарские часы
+                        .product-container__link
+                          a.link-m.tag(href='#') автомобили  
+                    .col-xs-12.col-sm-6.col-md-4.product-container
+                      .wrap
+                        a(href='#')
+                          figure
+                            img(src='img/news-1.jpg', alt='')
+                            small Сегодня в 18:04
+                        .product-container__name
+                          a.link-m(href='#') Как мастера создают известные швейцарские часы
+                        .product-container__link
+                          a.link-m.tag(href='#') авиация
+                    .col-xs-12.col-sm-6.product-container
+                      .wrap
+                        a(href='#')
+                          figure
+                            img(src='img/news-2.jpg', alt='')
+                            small Сегодня в 18:04
+                        .product-container__name
+                          a.link-m(href='#') Как мастера создают известные швейцарские часы
+                        .product-container__link
+                          a.link-m.tag(href='#') механизмы
+                    .col-xs-12.col-sm-6.product-container
+                      .wrap
+                        a(href='#')
+                          figure
+                            img(src='img/news-3.jpg', alt='')
+                            small Сегодня в 18:04
+                        .product-container__name
+                          a.link-m(href='#') Как мастера создают известные швейцарские часы
+                        .product-container__link
+                          a.link-m.tag(href='#') яхтинг
+                    .col-xs-12.col-sm-6.col-md-4.product-container
+                      .wrap
+                        a(href='#')
+                          figure
+                            img(src='img/news-4.jpg', alt='')
+                            small Сегодня в 18:04
+                        .product-container__name
+                          a.link-m(href='#') Как мастера создают известные швейцарские часы
+                        .product-container__link
+                          a.link-m.tag(href='#') автомобили
+                    .col-xs-12.col-sm-6.col-md-4.product-container
+                      .wrap
+                        a(href='#')
+                          figure
+                            img(src='img/news-4.jpg', alt='')
+                            small Сегодня в 18:04
+                        .product-container__name
+                          a.link-m(href='#') Как мастера создают известные швейцарские часы
+                        .product-container__link
+                          a.link-m.tag(href='#') автомобили
+                    .col-xs-12.col-sm-6.col-md-4.product-container
+                      .wrap
+                        a(href='#')
+                          figure
+                            img(src='img/news-4.jpg', alt='')
+                            small Сегодня в 18:04
+                        .product-container__name
+                          a.link-m(href='#') Как мастера создают известные швейцарские часы
+                        .product-container__link
+                          a.link-m.tag(href='#') автомобили
+                  .pagination-block.text-center
+                    ul.pagination
+                      li
+                        a(href='#') 1
+                      li
+                        a(href='#') 2
+                      li
+                        a(href='#') 3
+                      li.active
+                        a(href='#') 4
+                      li
+                        a(href='#') 5
+                      li
+                        a(href='#') ...
+                      li
+                        a(href='#') 182
+                    .pagination-block__controls
+                      a.pagination-block__prev(href='#')
+                        | ←
+                        span Назад
+                      a.pagination-block__next(href='#')
+                        span Далее  
+                        | →
+                        
+                .col-xs-12.col-md-3.side-column
+                  .fb-widget
+                    .fb-page(data-href='https://www.facebook.com/mfair.ua', data-small-header='false', data-adapt-container-width='true', data-hide-cover='false', data-show-facepile='true', data-width="360")
+                      blockquote.fb-xfbml-parse-ignore(cite='https://www.facebook.com/mfair.ua')
+                        a(href='https://www.facebook.com/mfair.ua') Mfair Украина
+                  .list-block
+                    h2.heading-block Рубрики
+                    ul
+                      li
+                        a(href="#")
+                          span.link-m.link-black Автомобили 
+                          span.quantity &nbsp;(27)
+                      li
+                        a(href="#")
+                          span.link-m.link-black Яхтинг 
+                          span.quantity &nbsp;(27)
+                      li
+                        a(href="#")
+                          span.link-m.link-black Механизмы 
+                          span.quantity &nbsp;(27)
+                      li
+                        a(href="#")
+                          span.link-m.link-black Авиация 
+                          span.quantity &nbsp;(27)
+                      li
+                        a(href="#")
+                          span.link-m.link-black Недвижимость 
+                          span.quantity &nbsp;(27)
+                      li
+                        a(href="#")
+                          span.link-m.link-black Стиль 
+                          span.quantity &nbsp;(27)
+                      li
+                        a(href="#")
+                          span.link-m.link-black Путешествия 
+                          span.quantity &nbsp;(27)
+                      li
+                        a(href="#")
+                          span.link-m.link-black Интервью 
+                          span.quantity &nbsp;(27)
+                      li
+                        a(href="#")
+                          span.link-m.link-black Репортаж 
+                          span.quantity &nbsp;(27)
+                      li
+                        a(href="#")
+                          span.link-m.link-black Мотоциклы 
+                          span.quantity &nbsp;(27)
+                  .interview
+                    h2.heading-block Интервью
+                    .interview__img
+                      figure
+                        img(src="img/horacio.jpg", alt="")
+                    .interview__title
+                      a(href="#").link-m.link-black Горацио Пагани
+                      p Основатель “Pagani Automobili”
+                  .popular
+                    .popular__content
+                      h2.heading-block Популярное
+                      .popular-list.clearfix
+                        .popular-list__item
+                          .img
+                            img(src='img/similar-1.jpg', alt='')
+                          .text
+                            a.link-m(href='#') Новый бутик Ermenegildo Zegna
+                        .popular-list__item
+                          .img
+                            img(src='img/similar-1.jpg', alt='')
+                          .text
+                            a.link-m(href='#') С молотка продадут автомобиль Джона Леннона
+                        .popular-list__item
+                          .img
+                            img(src='img/similar-1.jpg', alt='')
+                          .text
+                            a.link-m(href='#') Новый бутик Ermenegildo Zegna
+                        .popular-list__item
+                          .img
+                            img(src='img/similar-2.jpg', alt='')
+                          .text
+                            a.link-m(href='#') С молотка продадут автомобиль Джона Леннона
+                        .popular-list__item
+                          .img
+                            img(src='img/similar-1.jpg', alt='')
+                          .text
+                            a.link-m(href='#') Новый бутик Ermenegildo Zegna
+                        .popular-list__item
+                          .img
+                            img(src='img/similar-2.jpg', alt='')
+                          .text
+                            a.link-m(href='#') С молотка продадут автомобиль Джона Леннона
+                  
+
+      include ./partials/footer.jade
+    include ./partials/popups.jade
+    include ./partials/scripts.jade

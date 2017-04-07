@@ -1,0 +1,9 @@
+@media screen and (min-width: 1200px){
+  _::-webkit-full-page-media, _:future, :root .product-container__slider figure.slick-active {
+      visibility: visible;
+  }
+
+  _::-webkit-full-page-media, _:future, :root .product-container__slider figure {
+      visibility: hidden;
+  }
+}

@@ -1,0 +1,116 @@
+doctype html
+html
+  include ./partials/head.jade
+  body
+    include ./partials/debug.jade
+    #wrapper
+      #content
+        include ./partials/header.jade
+                    
+        main.content
+          .container
+            ol.breadcrumb
+              li: a(href='#') Главная
+              li.active Все рубрики
+            h1.heading-title
+              |Все рубрики
+              
+          section.allCategories.gray-bg.fix-height
+            .container
+              .row
+                .col-xs-12
+                  ul.categories__list.clearfix
+                    li
+                      a(href="#")
+                        figure: img(src="img/cat-1.png", alt="")
+                        span.name Автомобили
+                        span.quantity 25 938
+                      .sub-category
+                        a(href="#").link-m Mercedes-Benz  
+                        a(href="#").link-m Bentley
+                        a(href="#").link-m Lexus
+                    li
+                      a(href="#")
+                        figure: img(src="img/cat-2.png", alt="")
+                        span.name Часы
+                        span.quantity 3 584
+                      .sub-category
+                        a(href="#").link-m Eurocopter 
+                        a(href="#").link-m Robinson
+                        a(href="#").link-m Bell
+                    li
+                      a(href="#")
+                        figure: img(src="img/cat-3.png", alt="")
+                        span.name Вертолеты
+                        span.quantity 9 730
+                      .sub-category
+                        a(href="#").link-m Patek Philippe 
+                        a(href="#").link-m Breitling
+                        a(href="#").link-m Rolex
+                    li
+                      a(href="#")
+                        figure: img(src="img/cat-4.png", alt="")
+                        span.name Мотоциклы
+                        span.quantity 9 730
+                      .sub-category
+                        a(href="#").link-m Ducati
+                        a(href="#").link-m Harley-Davidson
+                        a(href="#").link-m Yamaha
+                    li
+                      a(href="#")
+                        figure: img(src="img/cat-5.png", alt="")
+                        span.name Недвижимость
+                        span.quantity 41 942
+                      .sub-category
+                        a(href="#").link-m Mercedes-Benz  
+                        a(href="#").link-m Bentley
+                        a(href="#").link-m Lexus
+                    li
+                      a(href="#")
+                        figure: img(src="img/cat-6.png", alt="")
+                        span.name Самолеты
+                        span.quantity 173
+                      .sub-category
+                        a(href="#").link-m Киев 
+                        a(href="#").link-m Одесса
+                        a(href="#").link-m Львов
+                    li
+                      a(href="#")
+                        figure: img(src="img/cat-7.png", alt="")
+                        span.name Хобби
+                        span.quantity 16 034
+                      .sub-category
+                        a(href="#").link-m Bombardier  
+                        a(href="#").link-m Gulfstream
+                        a(href="#").link-m Cessna
+                    li
+                      a(href="#")
+                        figure: img(src="img/cat-8.png", alt="")
+                        span.name Яхты и катера
+                        span.quantity 1 032
+                      .sub-category
+                        a(href="#").link-m Mercedes-Benz  
+                        a(href="#").link-m Bentley
+                        a(href="#").link-m Lexus
+                    li
+                      a(href="#")
+                        figure: img(src="img/cat-9.png", alt="")
+                        span.name Гаджеты
+                        span.quantity 25 938
+                      .sub-category
+                        a(href="#").link-m Mercedes-Benz  
+                        a(href="#").link-m Bentley
+                        a(href="#").link-m Lexus
+                    li
+                      a(href="#")
+                        figure: img(src="img/cat-10.png", alt="")
+                        span.name Антиквариат
+                        span.quantity 25 938
+                      .sub-category
+                        a(href="#").link-m Картины  
+                        a(href="#").link-m Фарфор
+                        a(href="#").link-m Оружие
+                    
+      include ./partials/footer.jade
+    include ./partials/popups.jade
+    include ./partials/scripts.jade

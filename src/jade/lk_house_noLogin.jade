@@ -1,0 +1,127 @@
+doctype html
+html
+  include ./partials/head.jade
+  body
+    include ./partials/debug.jade
+    #wrapper
+      #content
+        include ./partials/headerLK.jade
+                    
+        main.content.user-account
+          .container
+            ol.breadcrumb
+              li: a(href='#') Главная
+              li: a(href='#') Кабинет
+              li.active Подать объявление
+            h1.heading-title
+              |Подать объявление
+              
+          section.lk-wrap
+            .container.edit
+              .row
+                .col-xs-12.account-switch
+                  a(href="#").account-switch__item 
+                    |Прожада
+                  a(href="#").account-switch__item.active
+                    |Аренда
+              form(action="")
+                .row.account-categories
+                  .col-xs-12
+                    span.title Рубрика
+                    ul.categories__list.clearfix
+                      li: label(for="lk1").custom
+                        input(type="checkbox", name="name", value="" id="lk1")
+                        figure: img(src="img/cat-1.png", alt="")
+                        span.name Автомобили
+                      li: label(for="lk2").custom
+                        input(type="checkbox", name="name", value="" id="lk2")
+                        figure: img(src="img/cat-2.png", alt="")
+                        span.name Часы
+                      li: label(for="lk3").custom
+                        input(type="checkbox", name="name", value="" id="lk3")
+                        figure: img(src="img/cat-3.png", alt="")
+                        span.name Вертолеты
+                      li: label(for="lk4").custom
+                        input(type="checkbox", name="name", value="" id="lk4")
+                        figure: img(src="img/cat-4.png", alt="")
+                        span.name Мотоциклы
+                      li: label(for="lk5").custom
+                        input(type="checkbox", name="name", value="" id="lk5")
+                        figure: img(src="img/cat-5.png", alt="")
+                        span.name Недвижимость
+                      li: label(for="lk6").custom
+                        input(type="checkbox", name="name", value="" id="lk6")
+                        figure: img(src="img/cat-6.png", alt="")
+                        span.name Самолеты
+                      li: label(for="lk7").custom
+                        input(type="checkbox", name="name", value="" id="lk7")
+                        figure: img(src="img/cat-7.png", alt="")
+                        span.name Хобби
+                      li: label(for="lk8").custom
+                        input(type="checkbox", name="name", value="" id="lk8")
+                        figure: img(src="img/cat-8.png", alt="")
+                        span.name Яхты и катера
+                .row.account-section
+                  .col-xs-12.col-md-3
+                    .form-group
+                      label(for=""): span.required Город:
+                      select.custom-select
+                        option(value="" disable selected) Выберите ...
+                        option(value="")
+                        option(value="")
+                  .clearfix
+                  .col-xs-12.form-group
+                    label: span.required Фотографии объекта:
+                    small.label-subtitle 
+                      |Загружайте только фотографии объекта. Изображения с надписями будут удалены!
+                  .col-xs-12.col-sm-5.col-md-3.upload-img
+                    .upload__navs
+                      a(href="#"): i.mdi.mdi-plus
+                    .uploaded__navs
+                      a(href="#").reload: i.mdi.mdi-reload
+                      a(href="#").delete: i.mdi.mdi-delete
+                    figure
+                      img(src="img/no-image.jpg", alt="")
+                  .col-xs-12.col-sm-5.col-md-3.upload-img.uploaded
+                    .upload__navs
+                      a(href="#"): i.mdi.mdi-plus
+                    .uploaded__navs
+                      a(href="#").reload: i.mdi.mdi-reload
+                      a(href="#").delete: i.mdi.mdi-delete
+                    figure
+                      img(src="img/gal-2.jpg", alt="")
+                  .clearfix
+                  .col-xs-12.col-md-9
+                    .form-group
+                      label(for=""): span.required Описание:
+                      textarea(name="", rows="8", cols="40") 
+                  .clearfix
+                  .col-xs-12.col-md-3
+                    .form-group
+                      label(for=""): span Стоимость:
+                      input(type="text")
+                  .col-xs-12.col-sm-3
+                    .form-group.currency
+                      select.custom-select
+                        option(value="" disable selected) Дол.
+                        option(value="")
+                        option(value="")
+                .row.account-contacts
+                  .col-xs-12.col-sm-3
+                    h3.heading-section Контакты
+                    .form-group
+                      label(for=""): span.required Ваше имя:
+                      input(type="text")
+                    .form-group
+                      label(for=""): span.required Телефон с кодом города:
+                      input(type="text", name="name", value="")
+                    .form-group
+                      label(for=""): span.required Электронная почта:
+                      input(type="email", name="name", value="")
+                    button(type="", name="button").btn.btn-default.full
+                      |Опубликовать
+                    
+                      
+      include ./partials/footer.jade
+    include ./partials/popups.jade
+    include ./partials/scripts.jade

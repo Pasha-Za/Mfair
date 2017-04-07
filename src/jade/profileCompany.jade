@@ -1,0 +1,136 @@
+doctype html
+html
+  include ./partials/head.jade
+  body
+    include ./partials/debug.jade
+    #wrapper
+      #content
+        include ./partials/headerLK.jade
+                    
+        main.content
+          .container
+            ol.breadcrumb
+              li: a(href='#') Главная
+              li: a(href='#') Кабинет
+              li.active Профиль
+            h1.heading-title
+              |Профиль
+              
+          section.lk-wrap
+            .container.edit
+              form(action="")
+                .row
+                  .col-xs-12.col-md-3
+                    .form-group
+                      label(for=""): span.required Название компании:
+                      input(type="text")
+                    .form-group
+                      label(for=""): span.required Телефон с кодом города:
+                      input(type="text")
+                  .clearfix
+                  .col-xs-12.col-md-3
+                    .form-group
+                      label(for=""): span.required Email:
+                      input(type="email")
+                  .col-xs-12.col-md-3
+                    .form-group
+                      label(for=""): span Веб-сайт:
+                      input(type="text", name="name", value="")
+                  .clearfix
+                  .col-xs-12.col-md-3
+                    .form-group
+                      label(for=""): span.required Город:
+                      select.custom-select
+                        option(value="" disable selected) Киев
+                        option(value="")
+                        option(value="")
+                  .col-xs-12.col-md-3
+                    .form-group
+                      label(for=""): span Улица:
+                      input(type="text", name="name", value="" placeholder="Например: проспект Амосова")
+                      
+                  .col-xs-12.col-md-3
+                    .form-group
+                      label(for=""): span Номер здания:
+                      input(type="text", name="name", value="")
+                  .clearfix
+                  .col-xs-12.col-md-9
+                    .form-group
+                      label(for=""): span.required Описание:
+                      textarea(name="", rows="8", cols="40") 
+                  .clearfix
+                  .col-xs-12.col-sm-5.col-md-3
+                    .form-group
+                      label(for=""): span Часы работы:
+                      .half
+                        span С
+                        input(type="text")
+                      .half
+                        span До
+                        input(type="text")
+                  .clearfix
+                  .col-xs-12.col-md-6
+                    ul.days
+                      li
+                        label(for="day1").custom
+                          span Пн
+                          input#day1(type="checkbox")
+                      li
+                        label(for="day2").custom
+                          span Вт
+                          input#day2(type="checkbox")
+                      li
+                        label(for="day3").custom
+                          span Ср
+                          input#day3(type="checkbox")
+                      li
+                        label(for="day4").custom
+                          span Чт
+                          input#day4(type="checkbox")
+                      li
+                        label(for="day5").custom
+                          span Пт
+                          input#day5(type="checkbox")
+                      li
+                        label(for="day6").custom
+                          span Сб
+                          input#day6(type="checkbox")
+                      li
+                        label(for="day7").custom
+                          span Вс
+                          input#day7(type="checkbox")
+                  .col-xs-12.form-group
+                    label: span.required Логотип:
+                    small.label-subtitle 
+                      |Загружайте только фотографии в формате *.jpg, *.png или *.gif.<br/>Изображения с надписями будут удалены!
+                  .col-xs-12.col-md-3.upload-img.logo-upload
+                    .upload__navs
+                      a(href="#"): i.mdi.mdi-plus
+                    .uploaded__navs
+                      a(href="#").reload: i.mdi.mdi-reload
+                      a(href="#").delete: i.mdi.mdi-delete
+                    figure
+                      img(src="img/no-image.jpg", alt="")
+                  .clearfix
+                  .col-xs-12.form-group
+                    label: span.required Обложка:
+                  .col-xs-12.upload-img.uploaded.cover-upload
+                    .upload__navs
+                      a(href="#"): i.mdi.mdi-plus
+                    .uploaded__navs
+                      a(href="#").reload: i.mdi.mdi-reload
+                      a(href="#").delete: i.mdi.mdi-delete
+                    figure
+                      img(src="img/gal-3.jpg", alt="")
+                  .clearfix
+                  .col-xs-12.col-md-3
+                    .form-group
+                      label(for=""): span.required Пароль:
+                      input(type="password", name="name", value="")
+                    button(type="", name="button").btn.btn-default.profile-btn
+                      |Сохранить
+                    
+                      
+      include ./partials/footer.jade
+    include ./partials/popups.jade
+    include ./partials/scripts.jade

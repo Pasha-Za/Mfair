@@ -1,0 +1,61 @@
+doctype html
+html
+  include ./partials/head.jade
+  body
+    include ./partials/debug.jade
+    #wrapper
+      #content
+        include ./partials/headerLog.jade
+                    
+        main.content.user-account
+          .container
+            ol.breadcrumb
+              li: a(href='#') Главная
+              li: a(href='#') Кабинет
+              li.active Сообщения
+            h1.heading-title
+              |Менеджеры
+              
+          section.lk-wrap
+            .container
+              .row
+                .col-xs-12.col-md-7.messageBlock.manager
+                  .media
+                    .media-left
+                      span.mail: a(href="#") 1
+                      a(href='#')
+                        img.media-object(src='img/no-foto-avatar.jpg', alt='...')
+                    .media-body
+                      .messageBlock__user
+                        |Пашу Курьянов
+                      .messageBlock__position
+                        |Менеджер
+                      .messageBlock__phone
+                        |+38 097 490 22 44
+                      a(href="#").link-m.link-black Редактировать
+                      a(href="#").link-m.link-red Удалить
+                .col-xs-12.col-md-7.messageBlock.manager
+                  .media
+                    .media-left
+                      span.mail: a(href="#") 1
+                      a(href='#')
+                        img.media-object(src='img/user-photo.jpg', alt='...')
+                    .media-body
+                      .messageBlock__user
+                        |Пашу Курьянов
+                      .messageBlock__position
+                        |Менеджер
+                      .messageBlock__phone
+                        |+38 097 490 22 44
+                      a(href="#").link-m.link-black Редактировать
+                      a(href="#").link-m.link-red Удалить
+
+              button(type="button", name="button").btn.btn-default.center-block.add-manger-btn
+                span Добавить менеджера 
+            
+                      
+                    
+                      
+      include ./partials/footer.jade
+    include ./partials/popups.jade
+    include ./partials/scripts.jade

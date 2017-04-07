@@ -1,0 +1,23 @@
+#help-block.help-block
+  a(href="#").help-trigger
+  .help-block__wrap
+    h6.heading Поддержка:
+    .media.help-block__media
+      .media-left
+        a(href='#')
+          img.media-object(src='img/user-photo.jpg', alt='...')
+      .media-body
+        h4.media-heading Дмитрий Лойченко
+        a(href="tel:+380974902244") +38 097 490 22 44
+        a(href="mailto:info@mfair.com.ua").link-m.help__mail info@mfair.com.ua
+    .help-block__id
+      p Ваш ID код: <span>8978</span>
+    form(action="", method="post").help-block__form.message-form
+      .form-group
+        label(for=""): span Ваш телефон:
+        input(type="text")
+        span.error.hidden Заполнените поле!
+      span.success Спасибо! Заявка отправлена.
+      button.btn.btn-default Жду звонка!
+      
+      

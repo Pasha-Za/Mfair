@@ -1,0 +1,279 @@
+.tooltip_templates
+  span#tooltip_content
+    ul.complain-list
+      li
+        a(href="#")
+          span Не дозвониться
+      li
+        a(href="#")
+          span Неактуальное объявление 
+      li
+        a(href="#")
+          span Неверная цена
+      li
+        a(href="#")
+          span Неверное описание
+      li
+        a(href="#")
+          span Неверные фотографии
+      li
+        a(href="#")
+          span Неверный адрес
+      li
+        a(href="#")
+          span Объекта не существует
+          
+#brandModal.modal.fade(role='dialog').custom-modal
+  a(href="#").link-m.select-brand выбрать модель
+  .modal-dialog
+    // Modal content
+    .modal-content
+      .modal-header
+        button.close(type='button', data-dismiss='modal'): i.mdi.mdi-close
+        h4.modal-title Выберите бренд
+      .modal-body
+        .modal-list
+          ul
+            li
+              .modal-list__block
+                .modal-list__inputs
+                  .modal-list__letter
+                    |a
+                  .form-group
+                    label.custom
+                      | some brand 
+                      span.quantity (0)
+                      input(type="radio" name="brand")
+                  .form-group
+                    label.custom
+                      | some brand 
+                      span.quantity (0)
+                      input(type="radio" name="brand")
+                  .form-group
+                    label.custom
+                      | some brand 
+                      span.quantity (0)
+                      input(type="radio" name="brand")
+            li
+              .modal-list__block
+                .modal-list__inputs
+                  .modal-list__letter
+                    |b
+                  .form-group
+                    label.custom
+                      | some brand 
+                      span.quantity (0)
+                      input(type="radio" name="brand")
+                  .form-group
+                    label.custom
+                      | some brand 
+                      span.quantity (0)
+                      input(type="radio" name="brand")
+                  .form-group
+                    label.custom
+                      | some brand 
+                      span.quantity (0)
+                      input(type="radio" name="brand")
+                  .form-group
+                    label.custom
+                      | some brand 
+                      span.quantity (0)
+                      input(type="radio" name="brand")
+            li
+              .modal-list__block
+                .modal-list__inputs
+                  .modal-list__letter
+                    |c
+                  .form-group
+                    label.custom
+                      | some brand 
+                      span.quantity (0)
+                      input(type="radio" name="brand")
+            li
+              .modal-list__block
+                .modal-list__inputs
+                  .modal-list__letter
+                    |d
+                  .form-group
+                    label.custom
+                      | some brand 
+                      span.quantity (0)
+                      input(type="radio" name="brand")
+                  .form-group
+                    label.custom
+                      | some brand 
+                      span.quantity (0)
+                      input(type="radio" name="brand")
+                  .form-group
+                    label.custom
+                      | some brand 
+                      span.quantity (0)
+                      input(type="radio" name="brand")
+                  .form-group
+                    label.custom
+                      | some brand 
+                      span.quantity (0)
+                      input(type="radio" name="brand")
+                  .form-group
+                    label.custom
+                      | some brand 
+                      span.quantity (0)
+                      input(type="radio" name="brand")
+                
+            li
+              .modal-list__block
+                .modal-list__letter
+                  |a
+                .modal-list__inputs
+                  .form-group
+                    label.custom
+                      | some brand 
+                      span.quantity (0)
+                      input(type="radio" name="brand")
+                  .form-group
+                    label.custom
+                      | some brand 
+                      span.quantity (0)
+                      input(type="radio" name="brand")
+            li
+              .modal-list__block
+                .modal-list__letter
+                  |a
+                .modal-list__inputs
+                  .form-group
+                    label.custom
+                      | some brand 
+                      span.quantity (0)
+                      input(type="radio" name="brand")
+            li
+              .modal-list__block
+                .modal-list__letter
+                  |a
+                .modal-list__inputs
+                  .form-group
+                    label.custom
+                      | some brand 
+                      span.quantity (0)
+                      input(type="radio" name="brand")
+                  .form-group
+                    label.custom
+                      | some brand 
+                      span.quantity (0)
+                      input(type="radio" name="brand")
+                  .form-group
+                    label.custom
+                      | some brand 
+                      span.quantity (0)
+                      input(type="radio" name="brand")
+            li
+              .modal-list__block
+                .modal-list__letter
+                  |a
+                .modal-list__inputs
+                  .form-group
+                    label.custom
+                      | some brand 
+                      span.quantity (0)
+                      input(type="radio" name="brand")
+            li
+              .modal-list__block
+                .modal-list__letter
+                  |a
+                .modal-list__inputs
+                  .form-group
+                    label.custom
+                      | some brand 
+                      span.quantity (0)
+                      input(type="radio" name="brand")
+            
+                  .form-group
+                    label.custom
+                      | some brand 
+                      span.quantity (0)
+                      input(type="radio" name="brand")
+            
+                  .form-group
+                    label.custom
+                      | some brand 
+                      span.quantity (0)
+                      input(type="radio" name="brand")
+            
+                  .form-group
+                    label.custom
+                      | some brand 
+                      span.quantity (0)
+                      input(type="radio" name="brand")
+      .modal-footer
+        button(type="button", name="button").btn.btn-default Выбрать
+        
+#eqModal.modal.fade(role='dialog').custom-modal
+  .modal-dialog
+    // Modal content
+    .modal-content
+      .modal-header
+        button.close(type='button', data-dismiss='modal'): i.mdi.mdi-close
+        h4.modal-title Комплектация
+      .modal-body
+        .modal-list.equipment-list
+          ul
+            li
+              .equipment-list__block
+                h5 Безопасность
+                ul
+                  li Антиблокировочная система (ABS)
+                  li Подушки безопасности боковые
+                  li Антипробуксовочная система
+                  li Система стабилизации
+            li
+              .equipment-list__block
+                h5 Защита от угона
+                ul
+                  li Штатный иммобилайзер
+                  li Иммобилайзер (не штатный)
+                  li Центральный замок
+
+                
+            li
+              .equipment-list__block
+                h5 Обзор
+                ul 
+                  li Система адаптивного освещения
+                  li Электропривод зеркал
+                  li Датчик света
+                  li Датчик дождя
+                  li Ксеноновые/Биксеноновые фары
+                  li Датчик света
+                  li Обогрев зеркал
+                  li Датчик дождя
+                  li Ксеноновые/Биксеноновые фары
+
+            li
+              .equipment-list__block
+                h5 Комфорт
+                ul
+                  li Климат-контроль 1-зонный
+                  li Бортовой компьютер
+                  li Круиз-контроль
+                  li Сиденье водителя: электро регулировка
+                  li Электростеклоподъемники все
+                  li Парктроник задний
+                  li Сиденье пассажира: электро регулировка
+                  li Обогрев сидений
+                  li Регулировка руля по высоте и вылету
+                  li Усилитель руля
+                  li
+            li 
+              .equipment-list__block
+                  h5 Мультимедиа
+                  ul
+                    li Штатная аудиосистема с CD
+                    li Штатная навигационная система
+            li 
+              .equipment-list__block
+                  h5 Салон
+                  ul
+                    li Темный салон
+                    li Кожаный салон
+                    li Обогрев сидений
+
+        

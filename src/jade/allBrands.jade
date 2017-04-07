@@ -1,0 +1,71 @@
+doctype html
+html
+  include ./partials/head.jade
+  body
+    include ./partials/debug.jade
+    #wrapper
+      #content
+        include ./partials/header.jade
+                    
+        main.content
+          .container
+            ol.breadcrumb
+              li: a(href='#') Главная
+              li.active Бренды
+            h1.heading-title
+              |Бренды
+              
+          section.allBrand.gray-bg
+            .container
+              .row
+                .col-xs-12
+                  ul.brand-categories
+                    li.active: a(href="#") 
+                      span Все
+                    li: a(href="#") 
+                      span Автомобили
+                    li: a(href="#") 
+                      span Мотоциклы
+                    li: a(href="#") 
+                      span Часы
+                    li: a(href="#") 
+                      span Яхты
+                    li: a(href="#") 
+                      span Вертолеты
+                    li: a(href="#") 
+                      span Самолеты
+                    li: a(href="#") 
+                      span Гаджеты
+                    
+                  ul.alphabet-list
+                    - var alphList = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z']
+                    each val in alphList
+                      li: a(href="#")
+                        span= val
+                  .letter-block
+                    h2.heading-block A
+                    .letter-block__brands
+                      ul
+                        - for (var i=0; i<40; i++)
+                          li: a(href="#") some brand <span class="quantity">(#{i})</span>
+                  .letter-block
+                    h2.heading-block B
+                    .letter-block__brands
+                      ul
+                        - for (var i=0; i<20; i++)
+                          li: a(href="#") some brand <span class="quantity">(#{i})</span>
+                  .letter-block
+                    h2.heading-block C
+                    .letter-block__brands
+                      ul
+                        - for (var i=0; i<2; i++)
+                          li: a(href="#") some brand <span class="quantity">(#{i})</span>
+                  .letter-block
+                    h2.heading-block D
+                    .letter-block__brands
+                      ul
+                        - for (var i=0; i<1; i++)
+                          li: a(href="#") some brand <span class="quantity">(#{i})</span>
+      include ./partials/footer.jade
+    include ./partials/popups.jade
+    include ./partials/scripts.jade

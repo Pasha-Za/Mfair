@@ -1,0 +1,188 @@
+doctype html
+html
+  include ./partials/head.jade
+  body
+    #fb-root
+    script.
+      (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.8";
+      fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    include ./partials/debug.jade
+    #wrapper
+      #content
+        include ./partials/header.jade
+                    
+        main.content
+          .container
+            ol.breadcrumb
+              li: a(href='#') Главная
+              li.active Новости
+            h1.heading-title
+              |Новое судно за гранью совершенства!
+              
+          section.post.gray-bg
+            .container
+              .row
+                .col-xs-12.col-md-9.post-content
+                  .post-content__author.author
+                    .author__img
+                      img(src="img/post-pic.jpg", alt="")
+                    .author__content
+                      .name Алексей Кильштейн
+                      ul.tags
+                        li
+                          a.link-m(href="#") Яхтинг
+                        li
+                          a.link-m(href="#") Pershing
+                        li.date
+                          span 17 ноября 2015
+                  .post-content__article
+                    figure
+                      img(src="img/post-img.jpg", alt="")
+                      small Экстерьер 150-ти метровой Lürssen Kismet
+                    p
+                      |Референдум, на котором Британия проголосовала за выход из Европейского союза, погрузил яхтенную индустрию в состояние неопределенности. Несмотря на большое количество экспертных мнений по этому вопросу, мы до сих пор не знаем, к каким последствиям приведет это историческое голосование и как оно повлияет на суперяхтенный рынок. Прежде, чем рассуждать о значении Brexit для суперяхтенного рынка, мы должны задать себе целый ряд животрепещущих вопросов. Издание Boat International узнало у ряда ведущих игроков в индустрии, что именно это за вопросы.
+
+                    p
+                      |Девальвация фунта сильно повлияет на суперяхтенную промышленность Великобритании. Расходы производителей, зависящих от импорта, вырастут, но компании, чья продукция активно идет на экпорт, выиграют от ставших более дешевыми по сравнению с импортными домашних товаров и услуг. На брокеражном рынке покупатели с фунтовой ликвидностью обнаружат, что цены на иностранные яхты выросли. Например, суперяхта Solandge от Lurssen, выставленная на продажу за €169 млн, в реальном выражении стала после референдума на 14 млн фунтов дороже для покупателей, платящих в британской валюте.
+                      
+                    blockquote
+                      span Референдум, на котором Британия проголосовала за выход из Европейского союза, погрузил яхтенную индустрию в состояние неопределенности.
+                    p
+                      |Референдум, на котором Британия проголосовала за выход из Европейского союза, погрузил яхтенную индустрию в состояние неопределенности. Несмотря на большое количество экспертных мнений по этому вопросу, мы до сих пор не знаем, к каким последствиям приведет это историческое голосование и как оно повлияет на суперяхтенный рынок. Прежде, чем рассуждать о значении Brexit для суперяхтенного рынка, мы должны задать себе целый ряд животрепещущих вопросов. Издание Boat International узнало у ряда ведущих игроков в индустрии, что именно это за вопросы.
+
+                    p
+                      |Девальвация фунта сильно повлияет на суперяхтенную промышленность Великобритании. Расходы производителей, зависящих от импорта, вырастут, но компании, чья продукция активно идет на экпорт, выиграют от ставших более дешевыми по сравнению с импортными домашних товаров и услуг. На брокеражном рынке покупатели с фунтовой ликвидностью обнаружат, что цены на иностранные яхты выросли. Например, суперяхта Solandge от Lurssen, выставленная на продажу за €169 млн, в реальном выражении стала после референдума на 14 млн фунтов дороже для покупателей, платящих в британской валюте.
+                    .embed-responsive.embed-responsive-16by9.video
+                      iframe(src='https://www.youtube.com/embed/9yTlVKrZjUg', frameborder='0', allowfullscreen='').embed-responsive-item
+                    p
+                      |Референдум, на котором Британия проголосовала за выход из Европейского союза, погрузил яхтенную индустрию в состояние неопределенности. Несмотря на большое количество экспертных мнений по этому вопросу, мы до сих пор не знаем, к каким последствиям приведет это историческое голосование и как оно повлияет на суперяхтенный рынок. Прежде, чем рассуждать о значении Brexit для суперяхтенного рынка, мы должны задать себе целый ряд животрепещущих вопросов. Издание Boat International узнало у ряда ведущих игроков в индустрии, что именно это за вопросы.
+                    
+                    p
+                      |Девальвация фунта сильно повлияет на суперяхтенную промышленность Великобритании. Расходы производителей, зависящих от импорта, вырастут, но компании, чья продукция активно идет на экпорт, выиграют от ставших более дешевыми по сравнению с импортными домашних товаров и услуг. На брокеражном рынке покупатели с фунтовой ликвидностью обнаружат, что цены на иностранные яхты выросли. Например, суперяхта Solandge от Lurssen, выставленная на продажу за €169 млн, в реальном выражении стала после референдума на 14 млн фунтов дороже для покупателей, платящих в британской валюте.
+                    figure
+                      img(src="img/post-img.jpg", alt="")
+                      small Экстерьер 150-ти метровой Lürssen Kismet
+                    figure
+                      img(src="img/post-img.jpg", alt="")
+                      small Экстерьер 150-ти метровой Lürssen Kismet
+                    figure
+                      img(src="img/post-img.jpg", alt="")
+                      small Экстерьер 150-ти метровой Lürssen Kismet
+                    figure
+                      img(src="img/post-img.jpg", alt="")
+                      small Экстерьер 150-ти метровой Lürssen Kismet
+                    //- .post-gallery.clearfix
+                    //-   .post-gallery__item
+                    //-     a(href="img/gal-3.jpg" rel="post").fancybox: img(src="img/gal-3.jpg", alt="") 
+                    //-   .post-gallery__item
+                    //-     a(href="img/gal-3.jpg" rel="post").fancybox: img(src="img/gal-3.jpg", alt="") 
+                    //-   .post-gallery__item
+                    //-     a(href="img/gal-3.jpg" rel="post").fancybox: img(src="img/gal-3.jpg", alt="") 
+                    //-   .post-gallery__item
+                    //-     a(href="img/gal-3.jpg" rel="post").fancybox: img(src="img/gal-3.jpg", alt="") 
+                    //-   .post-gallery__item
+                    //-     a(href="img/gal-3.jpg"): img(src="img/gal-3.jpg", alt="") 
+                    script(src='//yastatic.net/es5-shims/0.0.2/es5-shims.min.js')
+                    script(src='//yastatic.net/share2/share.js')
+                    h6.heading-small Поделиться:
+                    .ya-share2(data-services='vkontakte,facebook,gplus', data-counter='')
+                    
+                .col-xs12.col-md-3.side-column
+                  .fb-widget
+                    .fb-page(data-href='https://www.facebook.com/mfair.ua', data-small-header='false', data-adapt-container-width='true', data-hide-cover='false', data-show-facepile='true', data-width="360")
+                      blockquote.fb-xfbml-parse-ignore(cite='https://www.facebook.com/mfair.ua')
+                        a(href='https://www.facebook.com/mfair.ua') Mfair Украина
+                  .list-block
+                    h2.heading-block Рубрики
+                    ul
+                      li
+                        a(href="#")
+                          span.link-m.link-black Автомобили 
+                          span.quantity &nbsp;(27)
+                      li
+                        a(href="#")
+                          span.link-m.link-black Яхтинг 
+                          span.quantity &nbsp;(27)
+                      li
+                        a(href="#")
+                          span.link-m.link-black Механизмы 
+                          span.quantity &nbsp;(27)
+                      li
+                        a(href="#")
+                          span.link-m.link-black Авиация 
+                          span.quantity &nbsp;(27)
+                      li
+                        a(href="#")
+                          span.link-m.link-black Недвижимость 
+                          span.quantity &nbsp;(27)
+                      li
+                        a(href="#")
+                          span.link-m.link-black Стиль 
+                          span.quantity &nbsp;(27)
+                      li
+                        a(href="#")
+                          span.link-m.link-black Путешествия 
+                          span.quantity &nbsp;(27)
+                      li
+                        a(href="#")
+                          span.link-m.link-black Интервью 
+                          span.quantity &nbsp;(27)
+                      li
+                        a(href="#")
+                          span.link-m.link-black Репортаж 
+                          span.quantity &nbsp;(27)
+                      li
+                        a(href="#")
+                          span.link-m.link-black Мотоциклы 
+                          span.quantity &nbsp;(27)
+                  .interview
+                    h2.heading-block Интервью
+                    .interview__img
+                      figure
+                        img(src="img/horacio.jpg", alt="")
+                    .interview__title
+                      a(href="#").link-m.link-black Горацио Пагани
+                      p Основатель “Pagani Automobili”
+                  .popular
+                    .popular__content
+                      h2.heading-block Популярное
+                      .popular-list.clearfix
+                        .popular-list__item
+                          .img
+                            img(src='img/similar-1.jpg', alt='')
+                          .text
+                            a.link-m(href='#') Новый бутик Ermenegildo Zegna
+                        .popular-list__item
+                          .img
+                            img(src='img/similar-1.jpg', alt='')
+                          .text
+                            a.link-m(href='#') С молотка продадут автомобиль Джона Леннона
+                        .popular-list__item
+                          .img
+                            img(src='img/similar-1.jpg', alt='')
+                          .text
+                            a.link-m(href='#') Новый бутик Ermenegildo Zegna
+                        .popular-list__item
+                          .img
+                            img(src='img/similar-2.jpg', alt='')
+                          .text
+                            a.link-m(href='#') С молотка продадут автомобиль Джона Леннона
+                        .popular-list__item
+                          .img
+                            img(src='img/similar-1.jpg', alt='')
+                          .text
+                            a.link-m(href='#') Новый бутик Ermenegildo Zegna
+                        .popular-list__item
+                          .img
+                            img(src='img/similar-2.jpg', alt='')
+                          .text
+                            a.link-m(href='#') С молотка продадут автомобиль Джона Леннона
+
+      include ./partials/footer.jade
+    include ./partials/popups.jade
+    include ./partials/scripts.jade

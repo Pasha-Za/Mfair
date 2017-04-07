@@ -1,0 +1,284 @@
+doctype html
+html
+  include ./partials/head.jade
+  body
+    include ./partials/debug.jade
+    #wrapper
+      #content
+        include ./partials/headerLK.jade
+                    
+        main.content.user-account
+          .container
+            ol.breadcrumb
+              li: a(href='#') Главная
+              li: a(href='#') Кабинет
+              li.active Подать объявление
+            h1.heading-title
+              |Подать объявление
+              
+          section.lk-wrap
+            .container.edit
+              .row
+                .col-xs-12.account-switch
+                  a(href="#").account-switch__item 
+                    |Прожада
+                  a(href="#").account-switch__item.active
+                    |Аренда
+              form(action="")
+                .row.account-categories
+                  .col-xs-12
+                    span.title Рубрика
+                    ul.categories__list.clearfix
+                      li: label(for="lk1").custom
+                        input(type="radio", name="name", value="" id="lk1")
+                        figure: img(src="img/cat-1.png", alt="")
+                        span.name Автомобили
+                      li: label(for="lk2").custom
+                        input(type="radio", name="name", value="" id="lk2")
+                        figure: img(src="img/cat-2.png", alt="")
+                        span.name Часы
+                      li: label(for="lk3").custom
+                        input(type="radio", name="name", value="" id="lk3")
+                        figure: img(src="img/cat-3.png", alt="")
+                        span.name Вертолеты
+                      li: label(for="lk4").custom
+                        input(type="radio", name="name", value="" id="lk4")
+                        figure: img(src="img/cat-4.png", alt="")
+                        span.name Мотоциклы
+                      li: label(for="lk5").custom
+                        input(type="radio", name="name", value="" id="lk5")
+                        figure: img(src="img/cat-5.png", alt="")
+                        span.name Недвижимость
+                      li: label(for="lk6").custom
+                        input(type="radio", name="name", value="" id="lk6")
+                        figure: img(src="img/cat-6.png", alt="")
+                        span.name Самолеты
+                      li: label(for="lk7").custom
+                        input(type="radio", name="name", value="" id="lk7")
+                        figure: img(src="img/cat-7.png", alt="")
+                        span.name Хобби
+                      li: label(for="lk8").custom
+                        input(type="radio", name="name", value="" id="lk8")
+                        figure: img(src="img/cat-8.png", alt="")
+                        span.name Яхты и катера
+                  .col-xs-12.col-md-3
+                    .form-group
+                      label(for=""): span.required Категория:
+                      select.custom-select
+                        option(value="" disable selected) Выберите ...
+                        option(value="")
+                        option(value="")
+                .row.account-section
+                  .col-xs-12.col-md-3
+                    .form-group
+                      label(for=""): span.required Бренд:
+                      select.custom-select
+                        option(value="" disable selected) Выберите ...
+                        option(value="")
+                        option(value="")
+                  .col-xs-12.col-md-3
+                    .form-group
+                      label(for=""): span.required Модель:
+                      select.custom-select
+                        option(value="" disable selected) Выберите ...
+                        option(value="")
+                        option(value="")
+                  .col-xs-12.col-md-3
+                    .form-group
+                      label(for="")
+                        span Модификация:
+                        span(title="Дополнительная информация о модели. ").tool.question-icon ?
+                      input(type="text", name="name", value="")
+                  .clearfix
+                  .col-xs-12.col-md-3
+                    .form-group
+                      label(for=""): span.required Город:
+                      select.custom-select
+                        option(value="" disable selected) Выберите ...
+                        option(value="")
+                        option(value="")
+                  .col-xs-12.col-md-3
+                    .form-group
+                      label(for=""): span Улица:
+                      input(type="text", name="name", value="" placeholder="Например: проспект Амосова")
+                      
+                  .col-xs-12.col-md-3
+                    .form-group
+                      label(for=""): span Номер дома:
+                      input(type="text", name="name", value="")
+                  .clearfix
+                  .col-xs-12.form-group
+                    label: span.required Фотографии объекта:
+                    small.label-subtitle 
+                      |Загружайте только фотографии объекта. Изображения с надписями будут удалены!
+                  .col-xs-12.col-sm-5.col-md-3.upload-img
+                    .upload__navs
+                      a(href="#"): i.mdi.mdi-plus
+                    .uploaded__navs
+                      a(href="#").reload: i.mdi.mdi-reload
+                      a(href="#").delete: i.mdi.mdi-delete
+                    figure
+                      img(src="img/no-image.jpg", alt="")
+                  .col-xs-12.col-sm-5.col-md-3.upload-img.uploaded
+                    .upload__navs
+                      a(href="#"): i.mdi.mdi-plus
+                    .uploaded__navs
+                      a(href="#").reload: i.mdi.mdi-reload
+                      a(href="#").delete: i.mdi.mdi-delete
+                    figure
+                      img(src="img/gal-2.jpg", alt="")
+                  .clearfix
+                  .col-xs-12.col-md-3
+                    .form-group
+                      label(for=""): span Год выпуска:
+                      select.custom-select
+                        option(value="" disable selected) Выберите ...
+                        option(value="")
+                        option(value="")
+                  .col-xs-12.col-md-3
+                    .form-group
+                      label(for=""): span Страна производитель:
+                      select.custom-select
+                        option(value="" disable selected) Выберите ...
+                        option(value="")
+                        option(value="")
+                  .clearfix
+                  .col-xs-12.col-md-3
+                    .form-group
+                      label(for=""): span КПП:
+                      select.custom-select
+                        option(value="" disable selected) Выберите ...
+                        option(value="")
+                        option(value="")
+                  .col-xs-12.col-md-3
+                    .form-group
+                      label(for=""): span Тип передачи на колесо:
+                      select.custom-select
+                        option(value="" disable selected) Выберите ...
+                        option(value="")
+                        option(value="")
+                  .clearfix
+                  .col-xs-12.col-md-3
+                    .form-group
+                      label(for=""): span Объем двигателя, см³:
+                      input(type="text", name="name", value="")
+                  .col-xs-12.col-md-3
+                    .form-group
+                      label(for=""): span Мощность двигателя л.с.:
+                      input(type="text", name="name", value="")
+                  .clearfix
+                  .col-xs-12.col-md-3
+                    .form-group
+                      label(for=""): span Охлаждение двигателя:
+                      select.custom-select
+                        option(value="" disable selected) Выберите ...
+                        option(value="")
+                        option(value="")
+                  .col-xs-12.col-md-3
+                    .form-group
+                      label(for=""): span Тип топлива:
+                      select.custom-select
+                        option(value="" disable selected) Выберите ...
+                        option(value="")
+                        option(value="")
+                  .clearfix
+                  .col-xs-12.col-md-3
+                    .form-group
+                      label(for=""): span Разгон 0-100 км./час:
+                      input(type="text", name="name", value="")
+                  .col-xs-12.col-md-3
+                    .form-group
+                      label(for=""): span Максимальная срокость, км./час:
+                      input(type="text", name="name", value="")
+                  .clearfix
+                  .col-xs-12.col-md-3
+                    .form-group
+                      label(for=""): span Пробег, км.:
+                      input(type="text", name="name", value="")
+                  .clearfix
+                  .col-xs-12.colors
+                    .form-group
+                      label(for=""): span Цвет:
+                    ul
+                      li
+                        label(for="c1" style="background-color: red;" title="цвет").tool.custom
+                          input#c1(type="radio" name="color")
+                      li
+                        label(for="c2" style="background-color: #9a4b00;" title="цвет").tool.custom
+                          input#c2(type="radio" name="color")
+                      li
+                        label(for="c3" style="background-color: #ff7800;" title="цвет").tool.custom
+                          input#c3(type="radio" name="color")
+                      li
+                        label(for="c4" style="background-color: #f2ddb8;" title="цвет").tool.custom
+                          input#c4(type="radio" name="color")
+                      li
+                        label(for="c5" style="background-color: #ffec70;" title="цвет").tool.custom
+                          input#c5(type="radio" name="color")
+                      li
+                        label(for="c6" style="background-color: #04b46d;" title="цвет").tool.custom
+                          input#c6(type="radio" name="color")
+                      li
+                        label(for="c7" style="background-color: #73c4f4;" title="цвет").tool.custom
+                          input#c7(type="radio" name="color")
+                      li
+                        label(for="c8" style="background-color: #3140b9;" title="цвет").tool.custom
+                          input#c8(type="radio" name="color")
+                      li
+                        label(for="c9" style="background-color: #8200ff;" title="цвет").tool.custom
+                          input#c9(type="radio" name="color")
+                      li
+                        label(for="c10" style="background-color: #c800ac;" title="цвет").tool.custom
+                          input#c10(type="radio" name="color")
+                      li
+                        label(for="c11" style="background-color: #ffc9da;" title="цвет").tool.custom
+                          input#c11(type="radio" name="color")
+                      li
+                        label(for="c12" style="background-color: #efefef;" title="цвет").tool.custom
+                          input#c12(type="radio" name="color")
+                      li
+                        label(for="c13" style="background-color: #a6a6a6;" title="цвет").tool.custom
+                          input#c13(type="radio" name="color")
+                      li
+                        label(for="c14" style="background-color: #000;" title="цвет").tool.custom
+                          input#c14(type="radio" name="color")
+                      li
+                        label(for="c15" title="Комбинированный" style="background-image: linear-gradient(-43deg, #0a00b2 0%, red 50%, #fffc00 100%);").tool.custom
+                          input#c15(type="radio" name="color")
+                  .col-xs-12.col-md-9
+                    .form-group
+                      label(for=""): span.required Описание:
+                      textarea(name="", rows="8", cols="40") 
+                  .clearfix
+                  .col-xs-12.col-sm-3
+                    .form-group
+                      label(for=""): span Стоимость:
+                      input(type="text")
+                  .col-xs-12.col-sm-3
+                    .form-group.currency
+                      select.custom-select
+                        option(value="" disable selected) Дол.
+                        option(value="")
+                        option(value="")
+                .row.account-contacts
+                  .col-xs-12.col-md-3
+                    h3.heading-section Контакты
+                    .form-group
+                      label(for=""): span.required Менеджер:
+                      select.custom-select
+                        option(value="" disable selected) Павел Ройтбург
+                        option(value="")
+                        option(value="")
+                    .form-group
+                      label(for=""): span.required Телефон:
+                      input(type="text", name="name", value="")
+                    .form-group
+                      label(for=""): span.required Электронная почта:
+                      input(type="email", name="name", value="")
+                    button(type="", name="button").btn.btn-default.full
+                      |Опубликовать
+                    
+                      
+      include ./partials/footer.jade
+    include ./partials/popups.jade
+    include ./partials/scripts.jade

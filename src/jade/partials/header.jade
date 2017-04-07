@@ -1,0 +1,51 @@
+header#header.header
+  .container
+    .header__logo
+      a(href="#").burger.visible-xs
+        span
+        span
+        span
+      a(href="#").search-trigger.visible-xs
+        i.mdi.mdi-magnify
+      a(href="#").logo
+        img(src="img/logo-header.png", alt="").img-responsive
+    .header__nav
+      nav.header__nav__list
+        ul
+          li.sub-menu
+            a(href="#")
+              i.mdi.mdi-chevron-down
+              |Продажа
+            ul.sub-menu__list.text-left
+              li: a(href="#") Автомобили
+              li: a(href="#") Недвижимость
+              li: a(href="#") Яхты и катера
+              li: a(href="#") Самолеты
+              li: a(href="#") Украшения
+              li: a(href="#") Антиквариат
+              li: a(href="#") Гаджеты
+              li: a(href="#") Часы
+              li: a(href="#") Все разделы
+              
+          li.sub-menu
+            a(href="#")
+              i.mdi.mdi-chevron-down 
+              |Аренда
+            ul.sub-menu__list.text-left
+              li: a(href="#") Автомобили
+              li: a(href="#") Недвижимость
+              li: a(href="#") Яхты и катера
+              li: a(href="#") Самолеты
+              li: a(href="#") Украшения
+              li: a(href="#") Антиквариат
+              li: a(href="#") Гаджеты
+              li: a(href="#") Часы
+              li: a(href="#") Все разделы
+          li: a(href="#") Компании
+          li: a(href="#") Кабинет
+          li: a(href="#") Подать объявление
+    .header__search
+      form(action="")
+        input(type="text" placeholder="Поиск...")#search-field.search-field
+          
+        button.search-btn

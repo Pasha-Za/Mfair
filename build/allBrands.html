@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <!--if IE 6
+    script(type='text/javascript').
+      location.replace("http://browsehappy.com/");
+    -->
+    <link rel="icon" href="favicon.png" type="image/png">
+    <link rel="shortcut icon" href="favicon.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tooltipster/3.3.0/css/tooltipster.min.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tooltipster/3.3.0/css/themes/tooltipster-light.min.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/application.css" type="text/css" media="screen">
+  </head>
+  <body>
+    <div id="debug"><a href="index.html">main</a><a href="history.html">history</a><a href="filterPage.html">filterPage</a><a href="main.html">mainPage</a><a href="autosalon.html">autosalon</a><a href="newAccount.html">newAccount</a><a href="allBrands.html">allBrands</a><a href="allCategories.html">allCategories</a><a href="news.html">news</a><a href="post.html">post</a><a href="lk_bike.html">lk_bike</a><a href="lk_car.html">lk_car</a><a href="lk_house.html">lk_house</a><a href="lk_house_noLogin.html">lk_house_noLogin</a><a href="allAds.html">allAds</a><a href="allMessages.html">allMessages</a><a href="messages.html">messages</a><a href="profileUser.html">profileUser</a><a href="profileCompany.html">profileCompany</a><a href="addManager.html">addManager</a><a href="allManager.html">allManager</a><a href="companiesSearch.html">companiesSearch</a><a href="companies.html">companies</a><a href="login.html">login</a><a href="pass.html">pass</a><a href="404.html">404</a><a href="posted.html">posted</a><a href="#" data-toggle="modal" data-target="#brandModal">brandModal</a>
+    </div>
+    <div id="wrapper">
+      <div id="content">
+        <header id="header" class="header">
+          <div class="container">
+            <div class="header__logo"><a href="#" class="burger visible-xs"><span></span><span></span><span></span></a><a href="#" class="search-trigger visible-xs"><i class="mdi mdi-magnify"></i></a><a href="#" class="logo"><img src="img/logo-header.png" alt="" class="img-responsive"></a></div>
+            <div class="header__nav">
+              <nav class="header__nav__list">
+                <ul>
+                  <li class="sub-menu"><a href="#"><i class="mdi mdi-chevron-down"></i>Продажа</a>
+                    <ul class="sub-menu__list text-left">
+                      <li><a href="#">Автомобили</a></li>
+                      <li><a href="#">Недвижимость</a></li>
+                      <li><a href="#">Яхты и катера</a></li>
+                      <li><a href="#">Самолеты</a></li>
+                      <li><a href="#">Украшения</a></li>
+                      <li><a href="#">Антиквариат</a></li>
+                      <li><a href="#">Гаджеты</a></li>
+                      <li><a href="#">Часы</a></li>
+                      <li><a href="#">Все разделы</a></li>
+                    </ul>
+                  </li>
+                  <li class="sub-menu"><a href="#"><i class="mdi mdi-chevron-down"> </i>Аренда</a>
+                    <ul class="sub-menu__list text-left">
+                      <li><a href="#">Автомобили</a></li>
+                      <li><a href="#">Недвижимость</a></li>
+                      <li><a href="#">Яхты и катера</a></li>
+                      <li><a href="#">Самолеты</a></li>
+                      <li><a href="#">Украшения</a></li>
+                      <li><a href="#">Антиквариат</a></li>
+                      <li><a href="#">Гаджеты</a></li>
+                      <li><a href="#">Часы</a></li>
+                      <li><a href="#">Все разделы</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">Компании</a></li>
+                  <li><a href="#">Кабинет</a></li>
+                  <li><a href="#">Подать объявление</a></li>
+                </ul>
+              </nav>
+            </div>
+            <div class="header__search">
+              <form action="">
+                <input type="text" placeholder="Поиск..." id="search-field" class="search-field">
+                <button class="search-btn"></button>
+              </form>
+            </div>
+          </div>
+        </header>
+        <main class="content">
+          <div class="container">
+            <ol class="breadcrumb">
+              <li><a href="#">Главная</a></li>
+              <li class="active">Бренды</li>
+            </ol>
+            <h1 class="heading-title">Бренды</h1>
+          </div>
+          <section class="allBrand gray-bg">
+            <div class="container">
+              <div class="row">
+                <div class="col-xs-12">
+                  <ul class="brand-categories">
+                    <li class="active"><a href="#"> <span>Все</span></a></li>
+                    <li><a href="#"> <span>Автомобили</span></a></li>
+                    <li><a href="#"> <span>Мотоциклы</span></a></li>
+                    <li><a href="#"> <span>Часы</span></a></li>
+                    <li><a href="#"> <span>Яхты</span></a></li>
+                    <li><a href="#"> <span>Вертолеты</span></a></li>
+                    <li><a href="#"> <span>Самолеты</span></a></li>
+                    <li><a href="#"> <span>Гаджеты</span></a></li>
+                  </ul>
+                  <ul class="alphabet-list">
+                    <li><a href="#"><span>A</span></a></li>
+                    <li><a href="#"><span>B</span></a></li>
+                    <li><a href="#"><span>C</span></a></li>
+                    <li><a href="#"><span>D</span></a></li>
+                    <li><a href="#"><span>E</span></a></li>
+                    <li><a href="#"><span>F</span></a></li>
+                    <li><a href="#"><span>G</span></a></li>
+                    <li><a href="#"><span>H</span></a></li>
+                    <li><a href="#"><span>I</span></a></li>
+                    <li><a href="#"><span>J</span></a></li>
+                    <li><a href="#"><span>K</span></a></li>
+                    <li><a href="#"><span>L</span></a></li>
+                    <li><a href="#"><span>M</span></a></li>
+                    <li><a href="#"><span>N</span></a></li>
+                    <li><a href="#"><span>O</span></a></li>
+                    <li><a href="#"><span>P</span></a></li>
+                    <li><a href="#"><span>Q</span></a></li>
+                    <li><a href="#"><span>R</span></a></li>
+                    <li><a href="#"><span>S</span></a></li>
+                    <li><a href="#"><span>T</span></a></li>
+                    <li><a href="#"><span>U</span></a></li>
+                    <li><a href="#"><span>V</span></a></li>
+                    <li><a href="#"><span>W</span></a></li>
+                    <li><a href="#"><span>X</span></a></li>
+                    <li><a href="#"><span>Y</span></a></li>
+                    <li><a href="#"><span>Z</span></a></li>
+                  </ul>
+                  <div class="letter-block">
+                    <h2 class="heading-block">A</h2>
+                    <div class="letter-block__brands">
+                      <ul>
+                        <li><a href="#">some brand <span class="quantity">(0)</span></a></li>
+                        <li><a href="#">some brand <span class="quantity">(1)</span></a></li>
+                        <li><a href="#">some brand <span class="quantity">(2)</span></a></li>
+                        <li><a href="#">some brand <span class="quantity">(3)</span></a></li>
+                        <li><a href="#">some brand <span class="quantity">(4)</span></a></li>
+                        <li><a href="#">some brand <span class="quantity">(5)</span></a></li>
+                        <li><a href="#">some brand <span class="quantity">(6)</span></a></li>
+                        <li><a href="#">some brand <span class="quantity">(7)</span></a></li>
+                        <li><a href="#">some brand <span class="quantity">(8)</span></a></li>
+                        <li><a href="#">some brand <span class="quantity">(9)</span></a></li>
+                        <li><a href="#">some brand <span class="quantity">(10)</span></a></li>
+                        <li><a href="#">some brand <span class="quantity">(11)</span></a></li>
+                        <li><a href="#">some brand <span class="quantity">(12)</span></a></li>
+                        <li><a href="#">some brand <span class="quantity">(13)</span></a></li>
+                        <li><a href="#">some brand <span class="quantity">(14)</span></a></li>
+                        <li><a href="#">some brand <span class="quantity">(15)</span></a></li>
+                        <li><a href="#">some brand <span class="quantity">(16)</span></a></li>
+                        <li><a href="#">some brand <span class="quantity">(17)</span></a></li>
+                        <li><a href="#">some brand <span class="quantity">(18)</span></a></li>
+                        <li><a href="#">some brand <span class="quantity">(19)</span></a></li>
+                        <li><a href="#">some brand <span class="quantity">(20)</span></a></li>
+                        <li><a href="#">some brand <span class="quantity">(21)</span></a></li>
+                        <li><a href="#">some brand <span class="quantity">(22)</span></a></li>
+                        <li><a href="#">some brand <span class="quantity">(23)</span></a></li>
+                        <li><a href="#">some brand <span class="quantity">(24)</span></a></li>
+                        <li><a href="#">some brand <span class="quantity">(25)</span></a></li>
+                        <li><a href="#">some brand <span class="quantity">(26)</span></a></li>
+                        <li><a href="#">some brand <span class="quantity">(27)</span></a></li>
+                        <li><a href="#">some brand <span class="quantity">(28)</span></a></li>
+                        <li><a href="#">some brand <span class="quantity">(29)</span></a></li>
+                        <li><a href="#">some brand <span class="quantity">(30)</span></a></li>
+                        <li><a href="#">some brand <span class="quantity">(31)</span></a></li>
+                        <li><a href="#">some brand <span class="quantity">(32)</span></a></li>
+                        <li><a href="#">some brand <span class="quantity">(33)</span></a></li>
+                        <li><a href="#">some brand <span class="quantity">(34)</span></a></li>
+                        <li><a href="#">some brand <span class="quantity">(35)</span></a></li>
+                        <li><a href="#">some brand <span class="quantity">(36)</span></a></li>
+                        <li><a href="#">some brand <span class="quantity">(37)</span></a></li>
+                        <li><a href="#">some brand <span class="quantity">(38)</span></a></li>
+                        <li><a href="#">some brand <span class="quantity">(39)</span></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="letter-block">
+                    <h2 class="heading-block">B</h2>
+                    <div class="letter-block__brands">
+                      <ul>
+                        <li><a href="#">some brand <span class="quantity">(0)</span></a></li>
+                        <li><a href="#">some brand <span class="quantity">(1)</span></a></li>
+                        <li><a href="#">some brand <span class="quantity">(2)</span></a></li>
+                        <li><a href="#">some brand <span class="quantity">(3)</span></a></li>
+                        <li><a href="#">some brand <span class="quantity">(4)</span></a></li>
+                        <li><a href="#">some brand <span class="quantity">(5)</span></a></li>
+                        <li><a href="#">some brand <span class="quantity">(6)</span></a></li>
+                        <li><a href="#">some brand <span class="quantity">(7)</span></a></li>
+                        <li><a href="#">some brand <span class="quantity">(8)</span></a></li>
+                        <li><a href="#">some brand <span class="quantity">(9)</span></a></li>
+                        <li><a href="#">some brand <span class="quantity">(10)</span></a></li>
+                        <li><a href="#">some brand <span class="quantity">(11)</span></a></li>
+                        <li><a href="#">some brand <span class="quantity">(12)</span></a></li>
+                        <li><a href="#">some brand <span class="quantity">(13)</span></a></li>
+                        <li><a href="#">some brand <span class="quantity">(14)</span></a></li>
+                        <li><a href="#">some brand <span class="quantity">(15)</span></a></li>
+                        <li><a href="#">some brand <span class="quantity">(16)</span></a></li>
+                        <li><a href="#">some brand <span class="quantity">(17)</span></a></li>
+                        <li><a href="#">some brand <span class="quantity">(18)</span></a></li>
+                        <li><a href="#">some brand <span class="quantity">(19)</span></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="letter-block">
+                    <h2 class="heading-block">C</h2>
+                    <div class="letter-block__brands">
+                      <ul>
+                        <li><a href="#">some brand <span class="quantity">(0)</span></a></li>
+                        <li><a href="#">some brand <span class="quantity">(1)</span></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="letter-block">
+                    <h2 class="heading-block">D</h2>
+                    <div class="letter-block__brands">
+                      <ul>
+                        <li><a href="#">some brand <span class="quantity">(0)</span></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </main>
+      </div>
+      <footer id="footer" class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-3 col-md-push-3 footer__categories equalH">
+              <h6 class="heading-small">Рубрики</h6>
+              <ul class="footer-list">
+                <li><a href="#">Главная страница</a></li>
+              </ul>
+              <ul class="footer-list">
+                <li><a href="#">Автомобили</a></li>
+                <li><a href="#">Антиквариат</a></li>
+                <li><a href="#">Вертолеты</a></li>
+                <li><a href="#">Гаджеты</a></li>
+                <li><a href="#">Интерьер</a></li>
+                <li><a href="#">Мотоциклы</a></li>
+              </ul>
+              <ul class="footer-list">
+                <li><a href="#">Бренды</a></li>
+                <li><a href="#">Диллеры</a></li>
+              </ul>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 col-md-push-3 footer__portal equalH">
+              <h6 class="heading-small">Портал</h6>
+              <ul class="footer-list">
+                <li><a href="#">Подать объявление</a></li>
+                <li><a href="#">Добавить диллера</a></li>
+                <li><a href="#">Создать аккаунт</a></li>
+                <li><a href="#">Войти</a></li>
+              </ul>
+              <ul class="footer-list">
+                <li><a href="#">Блог</a></li>
+                <li><a href="#">Вопросы и ответы</a></li>
+              </ul>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 col-md-pull-6 footer__contacts equalH"><a href="#" class="footer__contacts__logo"><img src="img/logo-footer.png" alt=""></a><small class="logo-caption">Mfair Украина — доска платных объявлений товаров роскоши.</small>
+              <div class="support">
+                <div class="support__heading">Поддержка:<br></div>
+                <div class="support__time">График работы: Пн. - Вн. 10:00 - 18:00</div><a href="#" class="support__phone">+38 (044) 540 19 45</a><a href="#" class="support__mail link-m link-white">info@mfair.com.ua</a>
+              </div>
+              <div class="copyrights">&copy;  2004 – 2014 Команда «Mfair Украина».<br>Все права защищены.</div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 footer__news equalH">
+              <h6 class="heading-small">Следите за новостями</h6>
+              <div class="footer__news__socials">
+                <ul>
+                  <li><a href="#" class="link-m link-white fb">Facebook</a></li>
+                  <li><a href="#" class="link-m link-white insta">Instagram</a></li>
+                </ul>
+              </div>
+              <div class="footer__news__club">
+                <h6 class="heading-small">Клуб Mfair</h6>
+                <p>Члены клуба получают доступ к эксклюзивному контенту, полный доступ к сайту, форумам, оповещение о уникальных предложениях и многому другому.</p><a href="#" class="btn btn-default btn-dark reg-btn"><span>Регистрация</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <div class="tooltip_templates"><span id="tooltip_content">
+        <ul class="complain-list">
+          <li><a href="#"><span>Не дозвониться</span></a></li>
+          <li><a href="#"><span>Неактуальное объявление </span></a></li>
+          <li><a href="#"><span>Неверная цена</span></a></li>
+          <li><a href="#"><span>Неверное описание</span></a></li>
+          <li><a href="#"><span>Неверные фотографии</span></a></li>
+          <li><a href="#"><span>Неверный адрес</span></a></li>
+          <li><a href="#"><span>Объекта не существует</span></a></li>
+        </ul></span></div>
+    <div id="brandModal" role="dialog" class="modal fade custom-modal"><a href="#" class="link-m select-brand">выбрать модель</a>
+      <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" data-dismiss="modal" class="close"><i class="mdi mdi-close"></i></button>
+            <h4 class="modal-title">Выберите бренд</h4>
+          </div>
+          <div class="modal-body">
+            <div class="modal-list">
+              <ul>
+                <li>
+                  <div class="modal-list__block">
+                    <div class="modal-list__inputs">
+                      <div class="modal-list__letter">a</div>
+                      <div class="form-group">
+                        <label class="custom">some brand <span class="quantity">(0)</span>
+                          <input type="radio" name="brand">
+                        </label>
+                      </div>
+                      <div class="form-group">
+                        <label class="custom">some brand <span class="quantity">(0)</span>
+                          <input type="radio" name="brand">
+                        </label>
+                      </div>
+                      <div class="form-group">
+                        <label class="custom">some brand <span class="quantity">(0)</span>
+                          <input type="radio" name="brand">
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="modal-list__block">
+                    <div class="modal-list__inputs">
+                      <div class="modal-list__letter">b</div>
+                      <div class="form-group">
+                        <label class="custom">some brand <span class="quantity">(0)</span>
+                          <input type="radio" name="brand">
+                        </label>
+                      </div>
+                      <div class="form-group">
+                        <label class="custom">some brand <span class="quantity">(0)</span>
+                          <input type="radio" name="brand">
+                        </label>
+                      </div>
+                      <div class="form-group">
+                        <label class="custom">some brand <span class="quantity">(0)</span>
+                          <input type="radio" name="brand">
+                        </label>
+                      </div>
+                      <div class="form-group">
+                        <label class="custom">some brand <span class="quantity">(0)</span>
+                          <input type="radio" name="brand">
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="modal-list__block">
+                    <div class="modal-list__inputs">
+                      <div class="modal-list__letter">c</div>
+                      <div class="form-group">
+                        <label class="custom">some brand <span class="quantity">(0)</span>
+                          <input type="radio" name="brand">
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="modal-list__block">
+                    <div class="modal-list__inputs">
+                      <div class="modal-list__letter">d</div>
+                      <div class="form-group">
+                        <label class="custom">some brand <span class="quantity">(0)</span>
+                          <input type="radio" name="brand">
+                        </label>
+                      </div>
+                      <div class="form-group">
+                        <label class="custom">some brand <span class="quantity">(0)</span>
+                          <input type="radio" name="brand">
+                        </label>
+                      </div>
+                      <div class="form-group">
+                        <label class="custom">some brand <span class="quantity">(0)</span>
+                          <input type="radio" name="brand">
+                        </label>
+                      </div>
+                      <div class="form-group">
+                        <label class="custom">some brand <span class="quantity">(0)</span>
+                          <input type="radio" name="brand">
+                        </label>
+                      </div>
+                      <div class="form-group">
+                        <label class="custom">some brand <span class="quantity">(0)</span>
+                          <input type="radio" name="brand">
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="modal-list__block">
+                    <div class="modal-list__letter">a</div>
+                    <div class="modal-list__inputs">
+                      <div class="form-group">
+                        <label class="custom">some brand <span class="quantity">(0)</span>
+                          <input type="radio" name="brand">
+                        </label>
+                      </div>
+                      <div class="form-group">
+                        <label class="custom">some brand <span class="quantity">(0)</span>
+                          <input type="radio" name="brand">
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="modal-list__block">
+                    <div class="modal-list__letter">a</div>
+                    <div class="modal-list__inputs">
+                      <div class="form-group">
+                        <label class="custom">some brand <span class="quantity">(0)</span>
+                          <input type="radio" name="brand">
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="modal-list__block">
+                    <div class="modal-list__letter">a</div>
+                    <div class="modal-list__inputs">
+                      <div class="form-group">
+                        <label class="custom">some brand <span class="quantity">(0)</span>
+                          <input type="radio" name="brand">
+                        </label>
+                      </div>
+                      <div class="form-group">
+                        <label class="custom">some brand <span class="quantity">(0)</span>
+                          <input type="radio" name="brand">
+                        </label>
+                      </div>
+                      <div class="form-group">
+                        <label class="custom">some brand <span class="quantity">(0)</span>
+                          <input type="radio" name="brand">
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="modal-list__block">
+                    <div class="modal-list__letter">a</div>
+                    <div class="modal-list__inputs">
+                      <div class="form-group">
+                        <label class="custom">some brand <span class="quantity">(0)</span>
+                          <input type="radio" name="brand">
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="modal-list__block">
+                    <div class="modal-list__letter">a</div>
+                    <div class="modal-list__inputs">
+                      <div class="form-group">
+                        <label class="custom">some brand <span class="quantity">(0)</span>
+                          <input type="radio" name="brand">
+                        </label>
+                      </div>
+                      <div class="form-group">
+                        <label class="custom">some brand <span class="quantity">(0)</span>
+                          <input type="radio" name="brand">
+                        </label>
+                      </div>
+                      <div class="form-group">
+                        <label class="custom">some brand <span class="quantity">(0)</span>
+                          <input type="radio" name="brand">
+                        </label>
+                      </div>
+                      <div class="form-group">
+                        <label class="custom">some brand <span class="quantity">(0)</span>
+                          <input type="radio" name="brand">
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" name="button" class="btn btn-default">Выбрать</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="eqModal" role="dialog" class="modal fade custom-modal">
+      <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" data-dismiss="modal" class="close"><i class="mdi mdi-close"></i></button>
+            <h4 class="modal-title">Комплектация</h4>
+          </div>
+          <div class="modal-body">
+            <div class="modal-list equipment-list">
+              <ul>
+                <li>
+                  <div class="equipment-list__block">
+                    <h5>Безопасность</h5>
+                    <ul>
+                      <li>Антиблокировочная система (ABS)</li>
+                      <li>Подушки безопасности боковые</li>
+                      <li>Антипробуксовочная система</li>
+                      <li>Система стабилизации</li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <div class="equipment-list__block">
+                    <h5>Защита от угона</h5>
+                    <ul>
+                      <li>Штатный иммобилайзер</li>
+                      <li>Иммобилайзер (не штатный)</li>
+                      <li>Центральный замок</li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <div class="equipment-list__block">
+                    <h5>Обзор</h5>
+                    <ul> 
+                      <li>Система адаптивного освещения</li>
+                      <li>Электропривод зеркал</li>
+                      <li>Датчик света</li>
+                      <li>Датчик дождя</li>
+                      <li>Ксеноновые/Биксеноновые фары</li>
+                      <li>Датчик света</li>
+                      <li>Обогрев зеркал</li>
+                      <li>Датчик дождя</li>
+                      <li>Ксеноновые/Биксеноновые фары</li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <div class="equipment-list__block">
+                    <h5>Комфорт</h5>
+                    <ul>
+                      <li>Климат-контроль 1-зонный</li>
+                      <li>Бортовой компьютер</li>
+                      <li>Круиз-контроль</li>
+                      <li>Сиденье водителя: электро регулировка</li>
+                      <li>Электростеклоподъемники все</li>
+                      <li>Парктроник задний</li>
+                      <li>Сиденье пассажира: электро регулировка</li>
+                      <li>Обогрев сидений</li>
+                      <li>Регулировка руля по высоте и вылету</li>
+                      <li>Усилитель руля</li>
+                      <li></li>
+                    </ul>
+                  </div>
+                </li>
+                <li> 
+                  <div class="equipment-list__block">
+                    <h5>Мультимедиа</h5>
+                    <ul>
+                      <li>Штатная аудиосистема с CD</li>
+                      <li>Штатная навигационная система</li>
+                    </ul>
+                  </div>
+                </li>
+                <li> 
+                  <div class="equipment-list__block">
+                    <h5>Салон</h5>
+                    <ul>
+                      <li>Темный салон</li>
+                      <li>Кожаный салон</li>
+                      <li>Обогрев сидений</li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="js/application.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.columnizer/1.6.0/jquery.columnizer.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tooltipster/3.3.0/js/jquery.tooltipster.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.4/jquery.touchSwipe.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+  </body>
+</html>

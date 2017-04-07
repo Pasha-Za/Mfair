@@ -1,0 +1,95 @@
+doctype html
+html
+  include ./partials/head.jade
+  body
+    include ./partials/debug.jade
+    include ./partials/help.jade
+    #wrapper
+      #content
+        include ./partials/headerLog.jade
+                    
+        main.content
+          .container
+            ol.breadcrumb
+              li: a(href='#') Главная
+              li: a(href='#') Кабинет
+              li.active Объявления
+            h1.heading-title
+              |Объявления
+              
+          section.lk-wrap
+            .container.adds
+              .row
+                .col-xs-12.col-sm-6.col-md-3.product-container
+                  .wrap
+                    a(href="#")
+                      figure.mail-container
+                        span.mail 1
+                        img(src="img/similar-3.jpg", alt="")
+                    .product-container__name
+                      a(href="#").link-m
+                        |Maserati Spyder
+                    .product-container__price.price-s
+                      |675,000 грн.
+                    .product-container__add
+                      a(href="#").link-m.link-black Редактировать
+                      .views
+                        |804
+                      a(href="#").link-m.link-red Удалить
+                .col-xs-12.col-sm-6.col-md-3.product-container
+                  .wrap
+                    a(href="#")
+                      figure.mail-container
+                        span.mail 1
+                        img(src="img/similar-3.jpg", alt="")
+                    .product-container__name
+                      a(href="#").link-m
+                        |Maserati Spyder
+                    .product-container__price.price-s
+                      |675,000 грн.
+                    .product-container__add
+                      a(href="#").link-m.link-black Редактировать
+                      .views
+                        |804
+                      a(href="#").link-m.link-red Удалить
+                .col-xs-12.col-sm-6.col-md-3.product-container
+                  .wrap
+                    a(href="#")
+                      figure.mail-container
+                        span.mail 1
+                        img(src="img/similar-3.jpg", alt="")
+                    .product-container__name
+                      a(href="#").link-m
+                        |Maserati Spyder
+                    .product-container__price.price-s
+                      |675,000 грн.
+                    .product-container__add
+                      a(href="#").link-m.link-black Редактировать
+                      .views
+                        |804
+                      a(href="#").link-m.link-red Удалить
+                .col-xs-12.col-sm-6.col-md-3.product-container
+                  .wrap
+                    a(href="#")
+                      figure.mail-container
+                        span.mail 1
+                        img(src="img/similar-3.jpg", alt="")
+                    .product-container__name
+                      a(href="#").link-m
+                        |Maserati Spyder
+                    .product-container__price.price-s
+                      |675,000 грн.
+                    .product-container__add
+                      a(href="#").link-m.link-black Редактировать
+                      .views
+                        |804
+                      a(href="#").link-m.link-red Удалить
+                .clearfix
+                button(type="", name="button").btn.btn-default
+                  i.icon-add
+                  span Подать объявление
+                    
+                      
+      include ./partials/footer.jade
+    include ./partials/popups.jade
+    include ./partials/scripts.jade

@@ -1,0 +1,274 @@
+doctype html
+html
+  include ./partials/head.jade
+  body
+    include ./partials/debug.jade
+    #wrapper
+      #content
+        include ./partials/header.jade
+                    
+        main.content
+          .container
+            ol.breadcrumb
+              li: a(href='#') Главная
+              li: a(href='#') Все компании
+              li.active Автосалоны
+            h1.heading-title
+              |Автосалоны Киева
+        section.products-search.gray-bg.company
+          .container
+            .row
+              .col-md-3.products-search__filter
+                .wrap
+                  .products-search__filter__header
+                    a(href="#").close-filter
+                    h2.heading-block Поиск по параметрам
+                  form.products-search__filter__body
+                    .products-search__filter__body__item
+                      h6.filter-heading Категория
+                      .form-group
+                        label(for="")
+                          |Все компании
+                          span.quantity (6,528) 
+                          input(type="checkbox" )
+                      .form-group
+                        label(for="")
+                          |Автосалон
+                          span.quantity (528)  
+                          input(type="checkbox")
+                      .form-group
+                        label(for="")
+                          |Агентство недвижимости
+                          span.quantity (241)  
+                          input(type="checkbox")
+                      .form-group
+                        label(for="")
+                          |Авиа салон
+                          span.quantity (103)  
+                          input(type="checkbox")
+                    .products-search__filter__body__item
+                      h6.filter-heading Регион
+                      .form-group
+                        label(for="check_1")
+                          |Любой
+                          input(type="checkbox" id="check_1")
+                      .form-group
+                        label(for="check_2")
+                          |Киев
+                          input(type="checkbox" id="check_2")
+                      .form-group
+                        label(for="check_3")
+                          |Одесса
+                          input(type="checkbox" id="check_3")
+                      a(href="#").filter-more-btn Другой
+                      
+                    .products-search__filter__body__item
+                      .form-group
+                        label(for="")
+                          |Сейчас открыто
+                          input(type="checkbox")
+                      .form-group
+                        label(for="")
+                          |Только премиум
+                          input(type="checkbox")
+                    .products-search__filter__body__item
+                      h6.filter-heading Бренд
+                      .form-group
+                        label(for="")
+                          |Любой <span class="quantity">(6,528)</span> 
+                          input(type="checkbox")
+                      .form-group
+                        label(for="")
+                          |Mercedes-benz <span class="quantity">(528)</span> 
+                          input(type="checkbox")
+                      .form-group
+                        label(for="")
+                          |Bentley <span class="quantity">(241)</span> 
+                          input(type="checkbox")
+                      .form-group
+                        label(for="")
+                          |Aston Martin <span class="quantity">(103)</span> 
+                          input(type="checkbox")
+                      .form-group
+                        label(for="")
+                          |Bugatti <span class="quantity">(85)</span> 
+                          input(type="checkbox")
+                      a(href="#").filter-more-btn Еще
+                    .products-search__filter__body__item
+                      button.btn.btn-default
+                        |Показать
+                      
+              .col-xs-12.col-md-9.products-search__results   
+                .products-search__results__tags
+                  button.filter-trigger.btn.btn-default
+                    span Фильтр
+                  ul
+                    li
+                      a(href="#").close-icon
+                      span Автосалон
+                    li
+                      a(href="#").close-icon
+                      span Киев  
+                    li
+                      a(href="#").close-icon
+                      span Mercedes-benz  
+                    li
+                      a(href="#").link-m: <span>Сбросить все</span>
+                .products-search__results__grid
+                  .products-search__results__grid__filter
+                    span.grid-results Найдено объявлений — <span>492</span>
+                  .products-search__results__grid__items
+                    .row
+                      .col-xs-12.col-sm-6.col-md-4.product-container
+                        .wrap
+                          a(href="#")
+                            img(src="img/company-icon-1.png" alt="" class="company-icon")
+                            figure: img(src="img/comp-3.jpg", alt="")
+                          .product-container__name
+                            a(href="#").link-m
+                              |Maserati Spyder
+                            span.medal-icon.active: img(src="img/medal-icon-a.png", alt="")
+                          .product-container__city
+                            |Киев
+                          .product-container__link
+                            a(href="#").link-m
+                              | 7 объявлений
+                      .col-xs-12.col-sm-6.col-md-4.product-container
+                        .wrap
+                          a(href="#")
+                            img(src="img/company-icon-1.png" alt="" class="company-icon")
+                            figure: img(src="img/comp-3.jpg", alt="")
+                          .product-container__name
+                            a(href="#").link-m
+                              |Maserati Spyder
+                            span.medal-icon.active: img(src="img/medal-icon-a.png", alt="")
+                          .product-container__city
+                            |Киев
+                          .product-container__link
+                            a(href="#").link-m
+                              | 7 объявлений
+                      .col-xs-12.col-sm-6.col-md-4.product-container
+                        .wrap
+                          a(href="#")
+                            img(src="img/company-icon-1.png" alt="" class="company-icon")
+                            figure: img(src="img/comp-3.jpg", alt="")
+                          .product-container__name
+                            a(href="#").link-m
+                              |Maserati Spyder
+                            span.medal-icon.active: img(src="img/medal-icon-a.png", alt="")
+                          .product-container__city
+                            |Киев
+                          .product-container__link
+                            a(href="#").link-m
+                              | 7 объявлений
+                      .col-xs-12.col-sm-6.col-md-4.product-container
+                        .wrap
+                          a(href="#")
+                            img(src="img/company-icon-1.png" alt="" class="company-icon")
+                            figure: img(src="img/comp-3.jpg", alt="")
+                          .product-container__name
+                            a(href="#").link-m
+                              |Maserati Spyder
+                            span.medal-icon.active: img(src="img/medal-icon-a.png", alt="")
+                          .product-container__city
+                            |Киев
+                          .product-container__link
+                            a(href="#").link-m
+                              | 7 объявлений
+                      .col-xs-12.col-sm-6.col-md-4.product-container
+                        .wrap
+                          a(href="#")
+                            img(src="img/company-icon-1.png" alt="" class="company-icon")
+                            figure: img(src="img/comp-3.jpg", alt="")
+                          .product-container__name
+                            a(href="#").link-m
+                              |Maserati Spyder
+                            span.medal-icon.active: img(src="img/medal-icon-a.png", alt="")
+                          .product-container__city
+                            |Киев
+                          .product-container__link
+                            a(href="#").link-m
+                              | 7 объявлений
+                      .col-xs-12.col-sm-6.col-md-4.product-container
+                        .wrap
+                          a(href="#")
+                            img(src="img/company-icon-1.png" alt="" class="company-icon")
+                            figure: img(src="img/comp-3.jpg", alt="")
+                          .product-container__name
+                            a(href="#").link-m
+                              |Maserati Spyder
+                            span.medal-icon.active: img(src="img/medal-icon-a.png", alt="")
+                          .product-container__city
+                            |Киев
+                          .product-container__link
+                            a(href="#").link-m
+                              | 7 объявлений
+                      .col-xs-12.col-sm-6.col-md-4.product-container
+                        .wrap
+                          a(href="#")
+                            img(src="img/company-icon-1.png" alt="" class="company-icon")
+                            figure: img(src="img/comp-3.jpg", alt="")
+                          .product-container__name
+                            a(href="#").link-m
+                              |Maserati Spyder
+                            span.medal-icon.active: img(src="img/medal-icon-a.png", alt="")
+                          .product-container__city
+                            |Киев
+                          .product-container__link
+                            a(href="#").link-m
+                              | 7 объявлений
+                      .col-xs-12.col-sm-6.col-md-4.product-container
+                        .wrap
+                          a(href="#")
+                            img(src="img/company-icon-1.png" alt="" class="company-icon")
+                            figure: img(src="img/comp-3.jpg", alt="")
+                          .product-container__name
+                            a(href="#").link-m
+                              |Maserati Spyder
+                            span.medal-icon.active: img(src="img/medal-icon-a.png", alt="")
+                          .product-container__city
+                            |Киев
+                          .product-container__link
+                            a(href="#").link-m
+                              | 7 объявлений
+                      .col-xs-12.col-sm-6.col-md-4.product-container
+                        .wrap
+                          a(href="#")
+                            img(src="img/company-icon-1.png" alt="" class="company-icon")
+                            figure: img(src="img/comp-3.jpg", alt="")
+                          .product-container__name
+                            a(href="#").link-m
+                              |Maserati Spyder
+                            span.medal-icon.active: img(src="img/medal-icon-a.png", alt="")
+                          .product-container__city
+                            |Киев
+                          .product-container__link
+                            a(href="#").link-m
+                              | 7 объявлений
+                            
+                      
+                    .pagination-block.text-center
+                      ul.pagination
+                        li
+                          a(href='#').link-m: span В начало
+                        li
+                          a(href='#') 1
+                        li.hidden-xs
+                          a(href='#') 2
+                        li.hidden-xs
+                          a(href='#') 3
+                        li.active
+                          a(href='#') 4
+                        li.hidden-xs
+                          a(href='#') 5
+                        li
+                          a(href='#') 182
+                        li
+                          a(href='#').link-m: span Последняя
+      include ./partials/footer.jade
+      .show-results-tooltip
+        |Найдено: 
+        span.quantity 2940  
+        a(href="#").link-m.link-white показать
+    include ./partials/popups.jade
+    include ./partials/scripts.jade

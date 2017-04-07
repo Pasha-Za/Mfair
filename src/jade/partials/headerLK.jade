@@ -1,0 +1,36 @@
+header#header.header.header_lk
+  .container
+    .header__logo
+      a(href="#").burger.visible-xs.visible-sm
+        span
+        span
+        span
+      a(href="#").logo
+        img(src="img/logo-header.png", alt="").img-responsive
+    .header__nav
+      nav.header__nav__list
+        ul
+          li.profile-link
+            a(href="#")
+              img(src="img/user-photo.jpg", alt="")
+              span Профиль
+          li: a(href="#") Объявления
+          li
+            a(href="#") 
+              |сообщение
+              span.badge 2
+          li: a(href="#") Менеджеры
+          li
+            a(href="#")
+              i.icon-add
+              span Подать объявление
+          li
+            a(href="#")
+              span Баланс:
+              span.icon-plus +
+              span.sum-container
+                span.sum 2 893,572 грн.
+          li
+            a(href="#")
+              i.mdi.mdi-login
+              span выйти

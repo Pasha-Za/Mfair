@@ -1,0 +1,63 @@
+doctype html
+html
+  include ./partials/head.jade
+  body
+    include ./partials/debug.jade
+    #wrapper
+      #content
+        include ./partials/headerLog.jade
+                    
+        main.content.user-account
+          .container
+            ol.breadcrumb
+              li: a(href='#') Главная
+              li: a(href='#') Кабинет
+              li.active Профиль
+            h1.heading-title
+              |Профиль
+              
+          section.lk-wrap
+            .container.edit
+              form(action="")
+                .row
+                  .col-xs-12.col-md-3
+                    .form-group
+                      label(for=""): span.required ФИО:
+                      input(type="text")
+                    .form-group
+                      label(for=""): span.required Телефон с кодом города:
+                      input(type="text")
+                    .form-group
+                      label(for=""): span.required Email:
+                      input(type="email")
+                    .form-group
+                      label(for=""): span Город:
+                      select.custom-select
+                        option(value="" disable selected) Киев
+                        option(value="")
+                        option(value="")
+                  .clearfix
+                  .col-xs-12.form-group
+                    label: span.required Фотография
+                    small.label-subtitle 
+                      |Загружайте только фотографии в формате *.jpg, *.png или *.gif.<br/>Изображения с надписями будут удалены!
+                  .col-xs-12.col-md-3.upload-img.logo-upload
+                    .upload__navs
+                      a(href="#"): i.mdi.mdi-plus
+                    .uploaded__navs
+                      a(href="#").reload: i.mdi.mdi-reload
+                      a(href="#").delete: i.mdi.mdi-delete
+                    figure
+                      img(src="img/no-image.jpg", alt="")
+                  .clearfix
+                  .col-xs-12.col-md-3
+                    .form-group
+                      label(for=""): span Пароль:
+                      input(type="password", name="name", value="")
+                    button(type="", name="button").btn.btn-default.profile-btn
+                      |Сохранить
+                    
+                      
+      include ./partials/footer.jade
+    include ./partials/popups.jade
+    include ./partials/scripts.jade

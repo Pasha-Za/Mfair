@@ -1,0 +1,24 @@
+doctype html
+html
+  include ./partials/head.jade
+  body.not-found
+    include ./partials/debug.jade
+    #wrapper
+      #content
+        include ./partials/headerLK.jade
+                    
+        main.content
+          .container
+            .not-found-block.text-center.posted
+              h1 Спасибо!
+              span Объявление будет проверено менеджерами Mfair <br/> и опубликовано <a href="#" class="link-m">по ссылке</a>
+
+              ul
+                li: a(href="#").link-m Главная
+                li: a(href="#").link-m Подать еще объявление
+                li: a(href="#").link-m Выйти
+                                
+
+      include ./partials/footer.jade
+    include ./partials/popups.jade
+    include ./partials/scripts.jade

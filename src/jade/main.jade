@@ -1,0 +1,247 @@
+doctype html
+html
+  include ./partials/head.jade
+  body
+    include ./partials/debug.jade
+    #wrapper
+      #content
+        include ./partials/headerLog.jade
+                    
+        main.content
+          section.mainGrid-block.gray-bg
+            .container
+              .row
+                .col-md-12.mainGrid-block__mob-slider
+                  .mainGrid-block__item.mainGrid-big
+                    a(href="#").wrap.new
+                      img(src="img/mainGrid-1.jpg", alt="")
+                      .mainGrid-block__item__info
+                        span.name Продажа дома в Кознча Заспе
+                        span.price 1 950 000 грн.
+                  .mainGrid-block__item.mainGrid-small
+                    a(href="#").wrap
+                      img(src="img/gal-3.jpg", alt="")
+                      .mainGrid-block__item__info
+                        span.name Aston Martin Vantage
+                        span.price 592 500 грн.
+                  .mainGrid-block__item.mainGrid-small
+                    a(href="#").wrap
+                      img(src="img/mainGrid-3.jpg", alt="")
+                      .mainGrid-block__item__info
+                        span.name Pateck Philippe
+                        span.price 427 000 грн.
+                  .mainGrid-block__item.mainGrid-big.right
+                    a(href="#").wrap.new
+                      img(src="img/mainGrid-4.jpg", alt="")
+                      .mainGrid-block__item__info
+                        span.name Ducati 1098s
+                        span.price 1 950 000 грн.
+                  .mainGrid-block__item.mainGrid-small
+                    a(href="#").wrap
+                      img(src="img/mainGrid-5.jpg", alt="")
+                      .mainGrid-block__item__info
+                        span.name Bell 206B
+                        span.price 2 580 000 грн.
+                  .mainGrid-block__item.mainGrid-small
+                    a(href="#").wrap
+                      img(src="img/mainGrid-6.jpg", alt="")
+                      .mainGrid-block__item__info
+                        span.name Riva Superama
+                        span.price 3 750 000 грн.
+          section.categories
+            .container
+              .col-xs-12.text-center
+                h2.heading-block.categories-heading Mfair Украина — доска платных объявлений товаров роскоши
+                ul.categories__list.clearfix
+                  li: a(href="#")
+                    figure: img(src="img/cat-1.png", alt="")
+                    span.name Автомобили
+                    span.quantity 25 938
+                  li: a(href="#")
+                    figure: img(src="img/cat-2.png", alt="")
+                    span.name Часы
+                    span.quantity 3 584
+                  li: a(href="#")
+                    figure: img(src="img/cat-3.png", alt="")
+                    span.name Вертолеты
+                    span.quantity 9 730
+                  li: a(href="#")
+                    figure: img(src="img/cat-4.png", alt="")
+                    span.name Мотоциклы
+                    span.quantity 9 730
+                  li: a(href="#")
+                    figure: img(src="img/cat-5.png", alt="")
+                    span.name Недвижимость
+                    span.quantity 41 942
+                  li: a(href="#")
+                    figure: img(src="img/cat-6.png", alt="")
+                    span.name Самолеты
+                    span.quantity 173
+                  li: a(href="#")
+                    figure: img(src="img/cat-7.png", alt="")
+                    span.name Хобби
+                    span.quantity 16 034
+                  li: a(href="#")
+                    figure: img(src="img/cat-8.png", alt="")
+                    span.name Яхты и катера
+                    span.quantity 1 032
+                a(href="#").btn.btn-default.btn-white.all Все категории
+          section.company.gray-bg
+            .container.text-center
+              h2.heading-block.text-center Компании
+              .row
+                .col-xs-12.col-sm-6.col-md-3.product-container
+                  .wrap
+                    a(href="#")
+                      img(src="img/company-icon-1.png", alt="").company-icon
+                      figure.new: img(src="img/comp-1.jpg", alt="")
+                    .product-container__name
+                      a(href="#").link-m
+                        |Maserati Spyder
+                      span.medal-icon: img(src="img/medal-icon.png", alt="")
+                    .product-container__city
+                      |Киев
+                    .product-container__link
+                      a(href="#").link-m
+                        | 73 объявления
+                .col-xs-12.col-sm-6.col-md-3.product-container
+                  .wrap
+                    a(href="#")
+                      img(src="img/company-icon-2.png", alt="").company-icon
+                      figure: img(src="img/comp-2.jpg", alt="")
+                    .product-container__name
+                      a(href="#").link-m
+                        |Maserati Spyder
+                      span.medal-icon: img(src="img/medal-icon.png", alt="")
+                    .product-container__city
+                      |Киев
+                    .product-container__link
+                      a(href="#").link-m
+                        | 15 объявления
+                .col-xs-12.col-sm-6.col-md-3.product-container
+                  .wrap
+                    a(href="#")
+                      img(src="img/company-icon-3.png", alt="").company-icon
+                      figure: img(src="img/comp-3.jpg", alt="")
+                    .product-container__name
+                      a(href="#").link-m
+                        |Maserati Spyder
+                      span.medal-icon.active: img(src="img/medal-icon-a.png", alt="")
+                    .product-container__city
+                      |Киев
+                    .product-container__link
+                      a(href="#").link-m
+                        | 7 объявлений
+                .col-xs-12.col-sm-6.col-md-3.product-container
+                  .wrap
+                    a(href="#")
+                      img(src="img/company-icon-4.png", alt="").company-icon
+                      figure: img(src="img/comp-4.jpg", alt="")
+                    .product-container__name
+                      a(href="#").link-m
+                        |Maserati Spyder
+                      span.medal-icon: img(src="img/medal-icon.png", alt="")
+                    .product-container__city
+                      |Киев
+                    .product-container__link
+                      a(href="#").link-m
+                        | 205 объявления
+              a(href="#").btn.btn-default.btn-white Показать все
+          section.brands
+            .container.text-center
+              h2.heading-block.text-center Бренды
+              .row
+                .col-xs-12
+                  ul.brand-list.clearfix
+                    li: a(href="#")
+                      figure: img(src="img/brand-1.png", alt="")
+                      span.name Bentley
+                    li: a(href="#")
+                      figure: img(src="img/brand-2.png", alt="")
+                      span.name Tag Heuer
+                    li: a(href="#")
+                      figure: img(src="img/brand-3.png", alt="")
+                      span.name Riva
+                    li: a(href="#")
+                      figure: img(src="img/brand-4.png", alt="")
+                      span.name Ducati
+                    li: a(href="#")
+                      figure: img(src="img/brand-5.png", alt="")
+                      span.name Bovet
+                    li: a(href="#")
+                      figure: img(src="img/brand-6.png", alt="")
+                      span.name Eurocopter
+                    li: a(href="#")
+                      figure: img(src="img/brand-7.png", alt="")
+                      span.name Bang & Olufsen
+                    li: a(href="#")
+                      figure: img(src="img/brand-8.png", alt="")
+                      span.name Cartier
+              a(href="#").btn.btn-default.btn-white Показать все
+              
+          section.news.gray-bg
+            .container.text-center
+              h2.heading-block.text-center Новости
+              .row
+                .col-xs-12.col-sm-6.col-md-3.product-container
+                  .wrap
+                    a(href="#")
+                      figure.new: img(src="img/news-1.jpg", alt="")
+                    .product-container__name
+                      a(href="#").link-m
+                        |Как мастера создают известные швейцарские часы
+                    .product-container__link
+                      a(href="#").link-m.tag
+                        | авиация
+                .col-xs-12.col-sm-6.col-md-3.product-container
+                  .wrap
+                    a(href="#")
+                      figure.new: img(src="img/news-2.jpg", alt="")
+                    .product-container__name
+                      a(href="#").link-m
+                        |Как мастера создают известные швейцарские часы
+                    .product-container__link
+                      a(href="#").link-m.tag
+                        | механизмы
+                .col-xs-12.col-sm-6.col-md-3.product-container
+                  .wrap
+                    a(href="#")
+                      figure.new: img(src="img/news-3.jpg", alt="")
+                    .product-container__name
+                      a(href="#").link-m
+                        |Как мастера создают известные швейцарские часы
+                    .product-container__link
+                      a(href="#").link-m.tag
+                        | яхтинг
+                .col-xs-12.col-sm-6.col-md-3.product-container
+                  .wrap
+                    a(href="#")
+                      figure.new: img(src="img/news-4.jpg", alt="")
+                    .product-container__name
+                      a(href="#").link-m
+                        |Как мастера создают известные швейцарские часы
+                    .product-container__link
+                      a(href="#").link-m.tag
+                        | автомобили  
+              a(href="#").btn.btn-default.btn-white Показать все
+              
+          section.about-project
+            .container
+              h2.heading-block.text-center О проекте
+              .row
+                .col-md-6.about-project__item
+                  h5 Покупайте надежно
+                  p.
+                    Сеть брокеров международного агентства недвижимости Sotheby's позволяет получить доступ к выставленным на продажу роскошным домам и объектам недвижимости по всему миру. На сайте возможен поиск недвижимости в любом уголке света. Здесь представлен обширный выбор роскошных объектов для любого стиля жизни: владения в горах, на береговой линии или на острове, дома для любителей гольфа или для отдыха и многое другое.
+                  p.
+                    Начните <a href="#" class="link-m">поиск товаров</a> прямо сейчас
+                    
+                .col-md-6.about-project__item
+                  h5 Продавайте быстро
+                  p.
+                    Мастерство и знание дела. Когда выдающийся дом выставляется на продажу, он должен быть замечен. Исключительный объект недвижимости заслуживает того, чтобы его представляли высококлассные специалисты, работающие на международном уровне эксперты по местному рынку. Международное агентство недвижимости Sotheby's было основано в 1976 г. Это уникальная, особенная сеть брокеров, предлагающих вниманию.
+                  p.
+                    Доверьте нам <a href="#" class="link-m">продажу</a> Вашых эксклюзивных товаров
+      include ./partials/footer.jade
+    include ./partials/popups.jade
+    include ./partials/scripts.jade

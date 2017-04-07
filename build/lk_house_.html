@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <!--if IE 6
+    script(type='text/javascript').
+      location.replace("http://browsehappy.com/");
+    -->
+    <link rel="icon" href="favicon.png" type="image/png">
+    <link rel="shortcut icon" href="favicon.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tooltipster/3.3.0/css/tooltipster.min.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tooltipster/3.3.0/css/themes/tooltipster-light.min.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/application.css" type="text/css" media="screen">
+  </head>
+  <body>
+    <div id="debug"><a href="index.html">main</a><a href="filterPage.html">filterPage</a><a href="main.html">mainPage</a><a href="autosalon.html">autosalon</a><a href="newAccount.html">newAccount</a><a href="allBrands.html">allBrands</a><a href="allCategories.html">allCategories</a><a href="news.html">news</a><a href="post.html">post</a><a href="lk_bike.html">lk_bike</a><a href="lk_car.html">lk_car</a><a href="lk_house.html">lk_house</a><a href="lk_house_noLogin.html">lk_house_noLogin</a><a href="allAds.html">allAds</a><a href="allMessages.html">allMessages</a><a href="messages.html">messages</a><a href="profileUser.html">profileUser</a><a href="profileCompany.html">profileCompany</a><a href="login.html">login</a><a href="pass.html">pass</a><a href="404.html">404</a></div>
+    <div id="wrapper">
+      <div id="content">
+        <header id="header" class="header">
+          <div class="container">
+            <div class="header__logo"><a href="#" class="burger visible-xs"><span></span><span></span><span></span></a><a href="#" class="search-trigger visible-xs"><i class="mdi mdi-magnify"></i></a><a href="#" class="logo"><img src="img/logo-header.png" alt="" class="img-responsive"></a></div>
+            <div class="header__nav">
+              <nav class="header__nav__list">
+                <ul>
+                  <li class="sub-menu"><a href="#"><i class="mdi mdi-chevron-down"></i>Продажа</a>
+                    <ul class="sub-menu__list text-left">
+                      <li><a href="#">Автомобили</a></li>
+                      <li><a href="#">Недвижимость</a></li>
+                      <li><a href="#">Яхты и катера</a></li>
+                      <li><a href="#">Самолеты</a></li>
+                      <li><a href="#">Украшения</a></li>
+                      <li><a href="#">Антиквариат</a></li>
+                      <li><a href="#">Гаджеты</a></li>
+                      <li><a href="#">Часы</a></li>
+                      <li><a href="#">Все разделы</a></li>
+                    </ul>
+                  </li>
+                  <li class="sub-menu"><a href="#"><i class="mdi mdi-chevron-down"> </i>Аренда</a>
+                    <ul class="sub-menu__list text-left">
+                      <li><a href="#">Автомобили</a></li>
+                      <li><a href="#">Недвижимость</a></li>
+                      <li><a href="#">Яхты и катера</a></li>
+                      <li><a href="#">Самолеты</a></li>
+                      <li><a href="#">Украшения</a></li>
+                      <li><a href="#">Антиквариат</a></li>
+                      <li><a href="#">Гаджеты</a></li>
+                      <li><a href="#">Часы</a></li>
+                      <li><a href="#">Все разделы</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">Компании</a></li>
+                  <li><a href="#">Кабинет</a></li>
+                  <li><a href="#">Подать объявление</a></li>
+                </ul>
+              </nav>
+            </div>
+            <div class="header__search">
+              <form action="">
+                <input type="text" placeholder="Поиск..." id="search-field" class="search-field">
+                <button class="search-btn"></button>
+              </form>
+            </div>
+          </div>
+        </header>
+        <main class="content user-account">
+          <div class="container">
+            <ol class="breadcrumb">
+              <li><a href="#">Главная</a></li>
+              <li><a href="#">Кабинет</a></li>
+              <li class="active">Подать объявление</li>
+            </ol>
+            <h1 class="heading-title">Подать объявление</h1>
+          </div>
+          <section class="lk-wrap">
+            <div class="container edit">
+              <div class="row">
+                <div class="col-xs-12 account-switch"><a href="#" class="account-switch__item">
+                     
+                    Прожада</a><a href="#" class="account-switch__item active">Аренда</a></div>
+              </div>
+              <form action="">
+                <div class="row account-categories">
+                  <div class="col-xs-12"><span class="title">Рубрика</span>
+                    <ul class="categories__list clearfix">
+                      <li>
+                        <label for="lk1" class="custom">
+                          <input type="checkbox" name="name" value="" id="lk1">
+                          <figure><img src="img/cat-1.png" alt=""></figure><span class="name">Автомобили</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label for="lk2" class="custom">
+                          <input type="checkbox" name="name" value="" id="lk2">
+                          <figure><img src="img/cat-2.png" alt=""></figure><span class="name">Часы</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label for="lk3" class="custom">
+                          <input type="checkbox" name="name" value="" id="lk3">
+                          <figure><img src="img/cat-3.png" alt=""></figure><span class="name">Вертолеты</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label for="lk4" class="custom">
+                          <input type="checkbox" name="name" value="" id="lk4">
+                          <figure><img src="img/cat-4.png" alt=""></figure><span class="name">Мотоциклы</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label for="lk5" class="custom">
+                          <input type="checkbox" name="name" value="" id="lk5">
+                          <figure><img src="img/cat-5.png" alt=""></figure><span class="name">Недвижимость</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label for="lk6" class="custom">
+                          <input type="checkbox" name="name" value="" id="lk6">
+                          <figure><img src="img/cat-6.png" alt=""></figure><span class="name">Самолеты</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label for="lk7" class="custom">
+                          <input type="checkbox" name="name" value="" id="lk7">
+                          <figure><img src="img/cat-7.png" alt=""></figure><span class="name">Хобби</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label for="lk8" class="custom">
+                          <input type="checkbox" name="name" value="" id="lk8">
+                          <figure><img src="img/cat-8.png" alt=""></figure><span class="name">Яхты и катера</span>
+                        </label>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-xs-12 col-md-3">
+                    <div class="form-group">
+                      <label for=""><span class="required">Категория:</span></label>
+                      <select class="custom-select">
+                        <option value="" disable selected>Выберите ...</option>
+                        <option value=""></option>
+                        <option value=""></option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="row account-section">
+                  <div class="col-xs-12 col-md-3">
+                    <div class="form-group">
+                      <label for=""><span class="required">Город:</span></label>
+                      <select class="custom-select">
+                        <option value="" disable selected>Выберите ...</option>
+                        <option value=""></option>
+                        <option value=""></option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-md-3">
+                    <div class="form-group">
+                      <label for=""><span>Улица:</span></label>
+                      <input type="text" name="name" value="" placeholder="Например: проспект Амосова">
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-md-3">
+                    <div class="form-group">
+                      <label for=""><span>Номер здания:</span></label>
+                      <input type="text" name="name" value="">
+                    </div>
+                  </div>
+                  <div class="clearfix"></div>
+                  <div class="col-xs-12 form-group">
+                    <label><span class="required">Фотографии объекта:</span></label><small class="label-subtitle">
+                       
+                      Загружайте только фотографии объекта. Изображения с надписями будут удалены!</small>
+                  </div>
+                  <div class="col-xs-12 col-sm-6 col-md-3 upload-img">
+                    <div class="upload__navs"><a href="#"><i class="mdi mdi-plus"></i></a></div>
+                    <div class="uploaded__navs"><a href="#" class="reload"><i class="mdi mdi-reload"></i></a><a href="#" class="delete"><i class="mdi mdi-delete"></i></a></div>
+                    <figure><img src="img/no-image.jpg" alt=""></figure>
+                  </div>
+                  <div class="col-xs-12 col-sm-6 col-md-3 upload-img uploaded">
+                    <div class="upload__navs"><a href="#"><i class="mdi mdi-plus"></i></a></div>
+                    <div class="uploaded__navs"><a href="#" class="reload"><i class="mdi mdi-reload"></i></a><a href="#" class="delete"><i class="mdi mdi-delete"></i></a></div>
+                    <figure><img src="img/gal-2.jpg" alt=""></figure>
+                  </div>
+                  <div class="clearfix"></div>
+                  <div class="col-xs-12 col-md-3">
+                    <div class="form-group">
+                      <label for=""><span>Год постройки:</span></label>
+                      <select class="custom-select">
+                        <option value="" disable selected>Выберите ...</option>
+                        <option value=""></option>
+                        <option value=""></option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-md-3">
+                    <div class="form-group">
+                      <label for=""><span>Материал стен:</span></label>
+                      <select class="custom-select">
+                        <option value="" disable selected>Выберите ...</option>
+                        <option value=""></option>
+                        <option value=""></option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="clearfix"></div>
+                  <div class="col-xs-12 col-md-3">
+                    <div class="form-group">
+                      <label for=""><span>Этажность:</span></label>
+                      <select class="custom-select">
+                        <option value="" disable selected>Выберите ...</option>
+                        <option value=""></option>
+                        <option value=""></option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-md-3">
+                    <div class="form-group">
+                      <label for=""><span>Площадь участка, соток:</span></label>
+                      <input type="text" name="name" value="">
+                    </div>
+                  </div>
+                  <div class="clearfix"></div>
+                  <div class="col-xs-12 col-md-3">
+                    <div class="form-group">
+                      <label for=""><span>Общая площадь м²:</span></label>
+                      <input type="text" name="name" value="">
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-md-3">
+                    <div class="form-group">
+                      <label for=""><span>Жилая площадь м²:</span></label>
+                      <input type="text" name="name" value="">
+                    </div>
+                  </div>
+                  <div class="clearfix"></div>
+                  <div class="col-xs-12 col-md-3">
+                    <div class="form-group">
+                      <label for=""><span>Комнат:</span></label>
+                      <input type="text" name="name" value="">
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-md-3">
+                    <div class="form-group">
+                      <label for=""><span>Спальных комнат:</span></label>
+                      <input type="text" name="name" value="">
+                    </div>
+                  </div>
+                  <div class="clearfix"></div>
+                  <div class="col-xs-12 col-md-3">
+                    <div class="form-group">
+                      <label for=""><span>Ванных:</span></label>
+                      <input type="text" name="name" value="">
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-md-3">
+                    <div class="form-group">
+                      <label for=""><span>Сан. узлов:</span></label>
+                      <input type="text" name="name" value="">
+                    </div>
+                  </div>
+                  <div class="clearfix"></div>
+                  <div class="col-xs-12 col-md-3">
+                    <div class="form-group">
+                      <label for=""><span>Гараж, мест:</span></label>
+                      <select class="custom-select">
+                        <option value="" disable selected>Выберите ...</option>
+                        <option value=""></option>
+                        <option value=""></option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-md-3">
+                    <div class="form-group">
+                      <label for=""><span>Удаленность от города, км.:</span></label>
+                      <input type="text" name="name" value="">
+                    </div>
+                  </div>
+                  <div class="clearfix"></div>
+                  <div class="col-xs-12 col-md-9">
+                    <div class="form-group">
+                      <label for=""><span class="required">Описание:</span></label>
+                      <textarea name="" rows="8" cols="40"> </textarea>
+                    </div>
+                  </div>
+                  <div class="clearfix"></div>
+                  <div class="col-xs-12 col-md-3">
+                    <div class="form-group">
+                      <label for=""><span>Стоимость:</span></label>
+                      <input type="text">
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-md-3">
+                    <div class="form-group currency">
+                      <select class="custom-select">
+                        <option value="" disable selected>Дол.</option>
+                        <option value=""></option>
+                        <option value=""></option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="row account-contacts">
+                  <div class="col-xs-12 col-md-3">
+                    <h3 class="heading-section">Контакты</h3>
+                    <div class="form-group">
+                      <label for=""><span class="required">Менеджер:</span></label>
+                      <select class="custom-select">
+                        <option value="" disable selected>Павел Ройтбург</option>
+                        <option value=""></option>
+                        <option value=""></option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label for=""><span class="required">Телефон:</span></label>
+                      <input type="text" name="name" value="">
+                    </div>
+                    <div class="form-group">
+                      <label for=""><span class="required">Электронная почта:</span></label>
+                      <input type="email" name="name" value="">
+                    </div>
+                    <button type="" name="button" class="btn btn-default full">Опубликовать</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </section>
+        </main>
+      </div>
+      <footer id="footer" class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-3 col-md-push-3 footer__categories equalH">
+              <h6 class="heading-small">Рубрики</h6>
+              <ul class="footer-list">
+                <li><a href="#">Главная страница</a></li>
+              </ul>
+              <ul class="footer-list">
+                <li><a href="#">Автомобили</a></li>
+                <li><a href="#">Антиквариат</a></li>
+                <li><a href="#">Вертолеты</a></li>
+                <li><a href="#">Гаджеты</a></li>
+                <li><a href="#">Интерьер</a></li>
+                <li><a href="#">Мотоциклы</a></li>
+              </ul>
+              <ul class="footer-list">
+                <li><a href="#">Бренды</a></li>
+                <li><a href="#">Диллеры</a></li>
+              </ul>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 col-md-push-3 footer__portal equalH">
+              <h6 class="heading-small">Портал</h6>
+              <ul class="footer-list">
+                <li><a href="#">Подать объявление</a></li>
+                <li><a href="#">Добавить диллера</a></li>
+                <li><a href="#">Создать аккаунт</a></li>
+                <li><a href="#">Войти</a></li>
+              </ul>
+              <ul class="footer-list">
+                <li><a href="#">Блог</a></li>
+                <li><a href="#">Вопросы и ответы</a></li>
+              </ul>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 col-md-pull-6 footer__contacts equalH"><a href="#" class="footer__contacts__logo"><img src="img/logo-footer.png" alt=""></a><small class="logo-caption">Mfair Украина — доска платных объявлений товаров роскоши.</small>
+              <div class="support">
+                <div class="support__heading">Поддержка:<br></div>
+                <div class="support__time">График работы: Пн. - Вн. 10:00 - 18:00</div><a href="#" class="support__phone">+38 (044) 540 19 45</a><a href="#" class="support__mail link-m link-white">info@mfair.com.ua</a>
+              </div>
+              <div class="copyrights">&copy;  2004 – 2014 Команда «Mfair Украина».<br>Все права защищены.</div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 footer__news equalH">
+              <h6 class="heading-small">Следите за новостями</h6>
+              <div class="footer__news__socials">
+                <ul>
+                  <li><a href="#" class="link-m link-white fb">Facebook</a></li>
+                  <li><a href="#" class="link-m link-white insta">Instagram</a></li>
+                </ul>
+              </div>
+              <div class="footer__news__club">
+                <h6 class="heading-small">Клуб Mfair</h6>
+                <p>Члены клуба получают доступ к эксклюзивному контенту, полный доступ к сайту, форумам, оповещение о уникальных предложениях и многому другому.</p><a href="#" class="btn btn-default btn-dark reg-btn"><span>Регистрация</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script type="text/javascript" src="js/application.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.columnizer/1.6.0/jquery.columnizer.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tooltipster/3.3.0/js/jquery.tooltipster.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+  </body>
+</html>

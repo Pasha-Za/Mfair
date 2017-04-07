@@ -1,0 +1,288 @@
+doctype html
+html
+  include ./partials/head.jade
+  body
+    include ./partials/debug.jade
+    #wrapper
+      #content
+        include ./partials/header.jade
+                    
+        main.content
+          .container
+            ol.breadcrumb
+              li: a(href='#') Главная
+              li.active Компании
+            h1.heading-title
+              |Компании
+          section.company-search.gray-bg
+            .container
+              .row
+                .row-sm-height
+                  .col-xs-12.col-sm-6.col-sm-height.company-form
+                    .company-form__wrap
+                      h2.heading-block.text-center
+                        |Поиск компаний
+                      form(action="")
+                        .company-form__header
+                          .form-group
+                            label(for="compSearch1").custom
+                              |Все
+                              input(type="radio", name="compSearch", value="" id="compSearch1")
+                            label(for="compSearch2").custom
+                              |Только премиум
+                              input(type="radio", name="compSearch", value="" id="compSearch2")
+                        .company-form__body
+                          .form-group
+                            input(type="text", name="name", value="" placeholder="Поиск по названию ...")
+                          .form-group
+                            select.custom-select
+                              option(value="" disable selected) Автосалоны
+                              option(value="") Автосалоны
+                              option(value="") Автосалоны
+                          button(type="button", name="button").btn.btn-default Найти
+                      .add-company
+                        i.icon-doc-plus
+                        a(href="#").link-m.link-white
+                          |Добавить компанию
+                  .col-xs-12.col-sm-6.col-sm-height.company-map
+                    // google tooltip
+                    #map-tooltip
+                      .g-tooltip(style="max-width: 310px; position: relative;")
+                        .g-tooltip__wrap(style="background-color: white; border: 1px solid #e3e3e3; box-shadow: 0 0 5px rgba(27, 27, 27, 0.15); border-radius: 4px; padding: 10px; overflow: hidden;")
+                          .g-tooltip__bottom-arrow(style="  position: absolute; bottom: -9px; left: 50%; margin-left: -10px;content: '';width: 0;height: 0;border-style: solid;border-width: 10px 10px 0 10px;border-color: #ffffff transparent transparent transparent;")
+                          a(href="#" style="position: absolute;top: 10px;right: 10px;color:#000;line-height: 11px;font-size: 22px;").g-tooltip__close &times;
+                          .g-tooltip__img(style="width: 90px; height: 90px;float: left;")
+                            img(src="img/company-icon-1.png", alt="" style="width: 100%;height: 100%;")
+                          .g-tooltip__content(style="float: left;font-family: Arial;padding-left: 10px;")
+                            h1.g-tooltip__heading(style="color: black;font-size: 15px;font-weight: 700;line-height: 15px;margin: 0 0 10px;") Park Lane
+                            p.g-tooltip__type(style="color: #666;font-size: 12px;font-weight: 400;line-height: 12px;margin: 0px 0px 15px;") Автосалон
+                            p.g-tooltip__phone(style="color: black;font-size: 12px;font-weight: 400;line-height: 12px;margin: 0px 0px 10px;") +38 097 490 22 44
+                            a(href="#" target="_blank").link-m 205 объявления
+                    // google tooltip end
+                    |map
+                
+          section.company-list
+            .container
+              .row
+                .col-xs-12.col-sm-6.col-md-3.company-list__item
+                  a(href="#").heading.link-m.link-black
+                    |Автосалоны
+                  ul
+                    li
+                      a(href="#")
+                        |Land Rover
+                        span.quantity (15)
+                    li
+                      a(href="#")
+                        |Land Rover
+                        span.quantity (15)
+                    li
+                      a(href="#")
+                        |Land Rover
+                        span.quantity (15)
+                    li
+                      a(href="#")
+                        |Land Rover
+                        span.quantity (15)
+                    li
+                      a(href="#")
+                        |Land Rover
+                        span.quantity (15)
+                    a(href="#").link-m.more-btn
+                      |Еще
+                .col-xs-12.col-sm-6.col-md-3.company-list__item
+                  a(href="#").heading.link-m.link-black
+                    |Агентства недвижимости
+                  ul
+                    li
+                      a(href="#")
+                        |Продажа квартир
+                        span.quantity (15)
+                    li
+                      a(href="#")
+                        |Загородная недвижимость
+                        span.quantity (15)
+                    li
+                      a(href="#")
+                        |Продажа земли
+                        span.quantity (15)
+                    li
+                      a(href="#")
+                        |Аренда пентхаусов
+                        span.quantity (15)
+                    li
+                      a(href="#")
+                        |Аренда особняков
+                        span.quantity (15)
+                    a(href="#").link-m.more-btn
+                      |Еще
+                .col-xs-12.col-sm-6.col-md-3.company-list__item
+                  a(href="#").heading.link-m.link-black
+                    |Автосалоны
+                  ul
+                    li
+                      a(href="#")
+                        |Land Rover
+                        span.quantity (15)
+                    li
+                      a(href="#")
+                        |Land Rover
+                        span.quantity (15)
+                    li
+                      a(href="#")
+                        |Land Rover
+                        span.quantity (15)
+                    li
+                      a(href="#")
+                        |Land Rover
+                        span.quantity (15)
+                    li
+                      a(href="#")
+                        |Land Rover
+                        span.quantity (15)
+                    a(href="#").link-m.more-btn
+                      |Еще
+                .col-xs-12.col-sm-6.col-md-3.company-list__item
+                  a(href="#").heading.link-m.link-black
+                    |Агентства недвижимости
+                  ul
+                    li
+                      a(href="#")
+                        |Продажа квартир
+                        span.quantity (15)
+                    li
+                      a(href="#")
+                        |Загородная недвижимость
+                        span.quantity (15)
+                    li
+                      a(href="#")
+                        |Продажа земли
+                        span.quantity (15)
+                    li
+                      a(href="#")
+                        |Аренда пентхаусов
+                        span.quantity (15)
+                    li
+                      a(href="#")
+                        |Аренда особняков
+                        span.quantity (15)
+                    a(href="#").link-m.more-btn
+                      |Еще
+                .col-xs-12.col-sm-6.col-md-3.company-list__item
+                  a(href="#").heading.link-m.link-black
+                    |Агентства недвижимости
+                  ul
+                    li
+                      a(href="#")
+                        |Продажа квартир
+                        span.quantity (15)
+                    li
+                      a(href="#")
+                        |Загородная недвижимость
+                        span.quantity (15)
+                    li
+                      a(href="#")
+                        |Продажа земли
+                        span.quantity (15)
+                    li
+                      a(href="#")
+                        |Аренда пентхаусов
+                        span.quantity (15)
+                    li
+                      a(href="#")
+                        |Аренда особняков
+                        span.quantity (15)
+                    a(href="#").link-m.more-btn
+                      |Еще
+                .col-xs-12.col-sm-6.col-md-3.company-list__item
+                  a(href="#").heading.link-m.link-black
+                    |Агентства недвижимости
+                  ul
+                    li
+                      a(href="#")
+                        |Продажа квартир
+                        span.quantity (15)
+                    li
+                      a(href="#")
+                        |Загородная недвижимость
+                        span.quantity (15)
+                    li
+                      a(href="#")
+                        |Продажа земли
+                        span.quantity (15)
+                    li
+                      a(href="#")
+                        |Аренда пентхаусов
+                        span.quantity (15)
+                    li
+                      a(href="#")
+                        |Аренда особняков
+                        span.quantity (15)
+                    a(href="#").link-m.more-btn
+                      |Еще
+                
+          
+          section.company.gray-bg
+            .container.text-center
+              h2.heading-block.text-center Новые компании
+              .row
+                .col-xs-12.col-sm-6.col-md-3.product-container
+                  .wrap
+                    a(href="#")
+                      img(src="img/company-icon-1.png", alt="").company-icon
+                      figure.new: img(src="img/comp-1.jpg", alt="")
+                    .product-container__name
+                      a(href="#").link-m
+                        |Maserati Spyder
+                      span.medal-icon: img(src="img/medal-icon.png", alt="")
+                    .product-container__city
+                      |Киев
+                    .product-container__link
+                      a(href="#").link-m
+                        | 73 объявления
+                .col-xs-12.col-sm-6.col-md-3.product-container
+                  .wrap
+                    a(href="#")
+                      img(src="img/company-icon-2.png", alt="").company-icon
+                      figure: img(src="img/comp-2.jpg", alt="")
+                    .product-container__name
+                      a(href="#").link-m
+                        |Maserati Spyder
+                      span.medal-icon: img(src="img/medal-icon.png", alt="")
+                    .product-container__city
+                      |Киев
+                    .product-container__link
+                      a(href="#").link-m
+                        | 15 объявления
+                .col-xs-12.col-sm-6.col-md-3.product-container
+                  .wrap
+                    a(href="#")
+                      img(src="img/company-icon-3.png", alt="").company-icon
+                      figure: img(src="img/comp-3.jpg", alt="")
+                    .product-container__name
+                      a(href="#").link-m
+                        |Maserati Spyder
+                      span.medal-icon.active: img(src="img/medal-icon-a.png", alt="")
+                    .product-container__city
+                      |Киев
+                    .product-container__link
+                      a(href="#").link-m
+                        | 7 объявлений
+                .col-xs-12.col-sm-6.col-md-3.product-container
+                  .wrap
+                    a(href="#")
+                      img(src="img/company-icon-4.png", alt="").company-icon
+                      figure: img(src="img/comp-4.jpg", alt="")
+                    .product-container__name
+                      a(href="#").link-m
+                        |Maserati Spyder
+                      span.medal-icon: img(src="img/medal-icon.png", alt="")
+                    .product-container__city
+                      |Киев
+                    .product-container__link
+                      a(href="#").link-m
+                        | 205 объявления
+
+      include ./partials/footer.jade
+    include ./partials/popups.jade
+    include ./partials/scripts.jade

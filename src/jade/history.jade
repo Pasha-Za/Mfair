@@ -1,0 +1,226 @@
+doctype html
+html
+  include ./partials/head.jade
+  body
+    include ./partials/debug.jade
+    #wrapper
+      #content
+        include ./partials/header.jade
+                    
+        main.content.history
+          .container
+            ol.breadcrumb
+              li: a(href='#') Главная
+              li: a(href='#') Автосалоны
+              li: a(href='#') Киев
+              li.active Вип Авто Клуб
+            h1.heading-title
+              |Бренд «Bentley»
+              
+          section.gallery.hero
+            .container
+              .row
+                .col-xs-12.hero__container
+                  img(src="img/hero-bg.jpg", alt="")
+                  .hero__content
+                    figure.hero__logo
+                      img(src="img/brand-1.png", alt="")
+                    p.title «Bentley»
+                    p.subtitle Автомобильная компания
+                    
+          section.history__info
+            .container
+              .row
+                .row-md-height
+                  .col-xs-12.col-sm-4.col-md-height.text-center
+                    h2.heading-block Основатель
+                    figure: img(src="img/horacio.jpg", alt="")
+                    .text
+                      p Сергей Доброседов
+                      p.subtitle Основатель компании Bentley
+                  .col-xs-12.col-sm-4.col-md-height
+                    h2.heading-block.text-center О компании
+                    p
+                      |Ferrari АВИЛОН – официальный дилер Ferrari в России. Новый флагманский центр Ferrari АВИЛОН открыл свои двери для любителей скорости и роскошных автомобилей в сентябре 2015 года. Загоревшись красным сердцем в самом центре Волгоградского проспекта, теперь легендарный бренд представлен на рынке по-настоящему ярко и профессионально. 
+
+                    p
+                      |Мы убеждены, что каждый клиент имеет право на исключительное отношение, а Ваши положительные эмоции от общения с любым сотрудником АВИЛОН – наш главный капитал и основа нашей репутации.
+                  .col-xs-12.col-sm-4.col-md-height.text-center
+                    h2.heading-block Представитель
+                    img(src="img/comp-1.jpg", alt="")
+                    .text
+                      a(href="#").link-m Вип Авто
+                      p.subtitle
+                        |Киев, бульвар Леси Украинки 27а
+          section.blockquote.gray-bg
+            .container
+              .row
+                .col-xs-12
+                  blockquote: span Референдум, на котором Британия проголосовала за выход из Европейского союза, погрузил яхтенную индустрию в состояние неопределенности.
+          
+          section.history__article
+            .container
+              .row
+                .col-xs-12.col-sm-6
+                  .titled-pic
+                    img(src="img/history-pic.jpg", alt="")
+                    span Фрэнк Клемент, Уолтер Бентли и Джон Дафф на фоне автомобиля Bentley 3 Litre.
+                .col-xs-12.col-sm-6
+                  h2.heading-block Основание
+                  p
+                    |Ferrari АВИЛОН – официальный дилер Ferrari в России.<br/>Новый флагманский центр Ferrari АВИЛОН открыл свои двери для любителей скорости и роскошных автомобилей в сентябре 2015 года.
+
+                  p
+                    |Загоревшись красным сердцем в самом центре Волгоградского проспекта, теперь легендарный бренд представлен на рынке по-настоящему ярко и профессионально. 
+
+                  p
+                    |Мы убеждены, что каждый клиент имеет право на исключительное отношение, а Ваши положительные эмоции от общения с любым сотрудником АВИЛОН – наш главный капитал и основа нашей репутации.
+
+                  p
+                    |Ferrari АВИЛОН – официальный дилер Ferrari в России.<br/>Новый флагманский центр Ferrari АВИЛОН открыл свои двери для любителей скорости и роскошных автомобилей в сентябре 2015 года.
+                    
+          section.gray-bg.history__pictures
+            .container
+              .row
+                .col-xs-12.col-sm-4
+                  .titled-pic
+                    img(src="img/history-pic.jpg", alt="")
+                    span Фрэнк Клемент, Уолтер Бентли и Джон
+                .col-xs-12.col-sm-4
+                  .titled-pic
+                    img(src="img/history-pic.jpg", alt="")
+                    span Фрэнк Клемент, Уолтер Бентли и Джон
+                .col-xs-12.col-sm-4
+                  .titled-pic
+                    img(src="img/history-pic.jpg", alt="")
+                    span Фрэнк Клемент, Уолтер Бентли и Джон
+            
+          section.history__article
+            .container
+              .row
+                .col-xs-12.col-sm-6
+                  h2.heading-block Наши дни
+                  p
+                    |Ferrari АВИЛОН – официальный дилер Ferrari в России.<br/>Новый флагманский центр Ferrari АВИЛОН открыл свои двери для любителей скорости и роскошных автомобилей в сентябре 2015 года.
+
+                  p
+                    |Загоревшись красным сердцем в самом центре Волгоградского проспекта, теперь легендарный бренд представлен на рынке по-настоящему ярко и профессионально. 
+
+                  p
+                    |Мы убеждены, что каждый клиент имеет право на исключительное отношение, а Ваши положительные эмоции от общения с любым сотрудником АВИЛОН – наш главный капитал и основа нашей репутации.
+
+                  p
+                    |Ferrari АВИЛОН – официальный дилер Ferrari в России.<br/>Новый флагманский центр Ferrari АВИЛОН открыл свои двери для любителей скорости и роскошных автомобилей в сентябре 2015 года.        
+                .col-xs-12.col-sm-6
+                  .titled-pic
+                    img(src="img/history-pic.jpg", alt="")
+                    span Фрэнк Клемент, Уолтер Бентли и Джон Дафф на фоне автомобиля Bentley 3 Litre.
+                .col-xs-12.history__social.text-center
+                  img.img-responsive.center-block(src="img/history-poster.png", alt="")
+                  .socials-block
+                    script(src='//yastatic.net/es5-shims/0.0.2/es5-shims.min.js')
+                    script(src='//yastatic.net/share2/share.js')
+                    .ya-share2(data-services='vkontakte,facebook,gplus', data-counter='')
+                    //- ul
+                    //-   li.socials-block__item: a(href="#").fb
+                    //-   li.socials-block__item: a(href="#").google
+                    //-   li.socials-block__item: a(href="#").vk
+                    //-   li.socials-block__item: a(href="#").email
+                      
+          section.similar-offers
+            .container.text-center
+              h2.heading-block Предложения
+              .row
+                .col-xs-12.col-sm-6.col-md-3.product-container
+                  .wrap
+                    .slider-wraper
+                      .slide-counter
+                        span.currentSlide 1
+                        |  из 
+                        span.totalSlides 
+                      .product-container__slider
+                        figure
+                         a(href="#"): img(data-lazy="img/similar-1.jpg" alt="")
+                        figure
+                         a(href="#"): img(data-lazy="img/similar-2.jpg" alt="")
+                        figure
+                         a(href="#"): img(data-lazy="img/similar-3.jpg" alt="")
+                    .product-container__name
+                      a(href="#").link-m
+                        |Maserati Spyder
+                      span(title="Премиум компания").medal-icon.tool: img(src="img/medal-icon.png", alt="")
+                    .product-container__city
+                      | Одесса
+                    .product-container__price.price-s
+                      |1,039,000 грн.
+                    
+                .col-xs-12.col-sm-6.col-md-3.product-container
+                  .wrap
+                    .slider-wraper
+                      .slide-counter
+                        span.currentSlide 1
+                        |  из 
+                        span.totalSlides 
+                      .product-container__slider
+                        figure
+                         a(href="#"): img(data-lazy="img/similar-2.jpg" alt="")
+                        figure
+                         a(href="#"): img(data-lazy="img/similar-1.jpg" alt="")
+                        figure
+                         a(href="#"): img(data-lazy="img/similar-3.jpg" alt="")
+                    .product-container__name
+                      a(href="#").link-m
+                        |Maserati GrandTurismo
+                      span(title="Премиум компания").medal-icon.tool: img(src="img/medal-icon.png", alt="")
+                    .product-container__city
+                      |Днепропетровск
+                    .product-container__price.price-s
+                      |842,000 грн.
+                    
+                .col-xs-12.col-sm-6.col-md-3.product-container
+                  .wrap
+                    .slider-wraper
+                      .slide-counter
+                        span.currentSlide 1
+                        |  из 
+                        span.totalSlides 
+                      .product-container__slider
+                        figure
+                         a(href="#"): img(data-lazy="img/similar-3.jpg" alt="")
+                        figure
+                         a(href="#"): img(data-lazy="img/similar-2.jpg" alt="")
+                        figure
+                         a(href="#"): img(data-lazy="img/similar-1.jpg" alt="")
+                    .product-container__name
+                      a(href="#").link-m
+                        |Maserati Spyder
+                      span(title="Премиум компания").medal-icon.tool: img(src="img/medal-icon.png", alt="")
+                    .product-container__city
+                      |Киев
+                    .product-container__price.price-s
+                      |675,000 грн.
+                    
+                .col-xs-12.col-sm-6.col-md-3.product-container
+                  .wrap
+                    .slider-wraper
+                      .slide-counter
+                        span.currentSlide 1
+                        |  из 
+                        span.totalSlides 
+                      .product-container__slider
+                        figure
+                         a(href="#"): img(data-lazy="img/similar-4.jpg" alt="")
+                        figure
+                         a(href="#"): img(data-lazy="img/similar-2.jpg" alt="")
+                    .product-container__name
+                      a(href="#").link-m
+                        |Maserati Ghibli
+                      span(title="Премиум компания").medal-icon.tool: img(src="img/medal-icon.png", alt="")
+                    .product-container__city
+                      |Днепропетровск
+                    .product-container__price.price-s
+                      |842,000 грн.
+              
+      include ./partials/footer.jade
+    include ./partials/popups.jade
+    include ./partials/scripts.jade

@@ -1,0 +1,30 @@
+.allCategories{
+  .categories__list{
+    border-top: 0;
+    li{
+      width: 25%;
+      margin-bottom: 40px;
+      @include mq(1023px) {
+        width: 33.3333%;
+      }
+      @include phone {
+        width: 100%;
+      }
+    }
+    figure{
+      margin-bottom: 15px;
+    }
+  }
+  .sub-category{
+    text-align: center;
+    margin-top: 10px;
+    a{
+      line-height: normal;
+      display: inline-block;
+      margin-right: 15px;
+      &:last-child{
+        margin-right: 0;
+      }
+    }
+  }
+}

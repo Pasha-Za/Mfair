@@ -1,0 +1,426 @@
+doctype html
+html
+  include ./partials/head.jade
+  body
+    include ./partials/debug.jade
+    #wrapper
+      #content
+        include ./partials/header.jade
+                    
+        main.content
+          .container
+            ol.breadcrumb
+              li: a(href='#') Главная
+              li: a(href='#') Продажа автомобилей
+              li: a(href='#') Украина
+              li: a(href='#') Land Rover
+              li.active Range Rover
+            h1.heading-title
+              |Продажа и <a href="#">аренда</a> автомобилей в Киеве
+        section.products-search.gray-bg
+          .container
+            .row
+              .col-md-3.products-search__filter
+                .wrap
+                  .products-search__filter__header
+                    a(href="#").close-filter
+                    h2.heading-block Поиск по параметрам
+                  form.products-search__filter__body
+                    .products-search__filter__body__item
+                      h6.filter-heading Регион
+                      .form-group
+                        label(for="check_1")
+                          |Любой
+                          input(type="checkbox" id="check_1")
+                      .form-group
+                        label(for="check_2")
+                          |Киев
+                          input(type="checkbox" id="check_2")
+                      .form-group
+                        label(for="check_3")
+                          |Одесса
+                          input(type="checkbox" id="check_3")
+                      a(href="#").filter-more-btn Другой
+                      
+                    .products-search__filter__body__item
+                      h6.filter-heading Бренд
+                      .form-group
+                        label(for="")
+                          |Любой <span class="quantity">(6,528)</span> 
+                          input(type="checkbox")
+                      .form-group
+                        label(for="")
+                          |Mercedes-benz <span class="quantity">(528)</span> 
+                          input(type="checkbox")
+                      .form-group
+                        label(for="")
+                          |Bentley <span class="quantity">(241)</span> 
+                          input(type="checkbox")
+                      .form-group
+                        label(for="")
+                          |Aston Martin <span class="quantity">(103)</span> 
+                          input(type="checkbox")
+                      .form-group
+                        label(for="")
+                          |Bugatti <span class="quantity">(85)</span> 
+                          input(type="checkbox")
+                      a(href="#").filter-more-btn Еще
+                      
+                    .products-search__filter__body__item
+                      h6.filter-heading Цена, грн.
+                      .form-group
+                        label(for="")
+                          |Любая <span class="quantity">(6,528)</span> 
+                          input(type="checkbox")
+                      .form-group
+                        label(for="")
+                          |0 - 10 000 <span class="quantity">(528)</span> 
+                          input(type="checkbox")
+                      .form-group
+                        label(for="")
+                          |10 000 - 20 000 <span class="quantity">(241)</span> 
+                          input(type="checkbox")
+                      .form-group
+                        label(for="")
+                          |20 000 - 30 000 <span class="quantity">(103)</span> 
+                          input(type="checkbox")
+                      .form-group
+                        label(for="")
+                          |30 000 - 40 000 <span class="quantity">(85)</span> 
+                          input(type="checkbox")
+                      a(href="#").filter-more-btn Еще
+                      
+                    .products-search__filter__body__item
+                      h6.filter-heading Тип кузова
+                      .form-group
+                        label(for="")
+                          |Любой <span class="quantity">(241)</span>
+                          input(type="checkbox")
+                      .form-group
+                        label(for="")
+                          |Кабриолет <span class="quantity">(18)</span>
+                          input(type="checkbox")
+                      .form-group
+                        label(for="")
+                          |Внедорожник <span class="quantity">(302)</span> 
+                          input(type="checkbox")
+                      .form-group
+                        label(for="")
+                          |Седан <span class="quantity">(1820)</span> 
+                          input(type="checkbox")
+                      .form-group
+                        label(for="")
+                          |Купе <span class="quantity">(52)</span>  
+                          input(type="checkbox")
+                      a(href="#").filter-more-btn Еще
+                      
+                    .products-search__filter__body__item
+                      h6.filter-heading Год выпуска
+                      .form-group.half
+                        select.custom-select
+                          option(value="" selected disabled) -
+                          option(value="") 2000
+                          option(value="") 2001
+                      .form-group.half
+                        select.custom-select
+                          option(value="" selected disabled) -
+                          option(value="") 2010
+                          option(value="") 2011
+                      .form-group
+                        label(for="")
+                          |Любой
+                          input(type="checkbox")
+                      .form-group
+                        label(for="")
+                          |Новые
+                          input(type="checkbox")
+                      .form-group
+                        label(for="")
+                          |Старше 2 лет
+                          input(type="checkbox")
+                      .form-group
+                        label(for="")
+                          |Старше 5 лет 
+                          input(type="checkbox")
+                      .form-group
+                        label(for="")
+                          |Ретро
+                          input(type="checkbox")
+                    .products-search__filter__body__item
+                      button.btn.btn-default
+                        |Показать
+                      a(href="#").link-m.clear-filter: <span>Сбросить все</span>
+                      
+              .col-xs-12.col-md-9.products-search__results   
+                .products-search__results__tags
+                  button.filter-trigger.btn.btn-default
+                    span Фильтр
+                  ul
+                    li
+                      a(href="#").close-icon
+                      span Mercedes-benz
+                    li
+                      a(href="#").close-icon
+                      span Украина  
+                    li
+                      a(href="#").close-icon
+                      span Внедорожник  
+                    li
+                      a(href="#").link-m: <span>Сбросить все</span>
+                .products-search__results__grid
+                  .products-search__results__grid__filter
+                    span.grid-results Найдено объявлений — <span>492</span>
+                    ul.grid-filter-list
+                      li
+                        |Показать:
+                      li.active
+                        a(href="#") Новые на сайте
+                      li
+                        a(href="#").link-m Популярные
+                      li
+                        a(href="#").link-m Без пробега
+                  .products-search__results__grid__items
+                    .row
+                      .col-xs-12.col-sm-4.product-container
+                        .wrap
+                          .slider-wraper
+                            .slide-counter
+                              span.currentSlide 1
+                              |  из 
+                              span.totalSlides 
+                            .product-container__slider.new
+                              figure
+                               a(href="#"): img(data-lazy="img/similar-4.jpg" alt="")
+                              figure
+                               a(href="#"): img(data-lazy="img/similar-2.jpg" alt="")
+                          .product-container__name
+                            a(href="#").link-m
+                              |Maserati Spyder
+                            span(title="Премиум компания").medal-icon.tool: img(src="img/medal-icon.png", alt="")
+                          .product-container__city
+                            |Киев
+                          .product-container__price.price-s
+                            |675,000 грн.
+                            
+                      .col-xs-12.col-sm-4.product-container
+                        .wrap
+                          .slider-wraper
+                            .slide-counter
+                              span.currentSlide 1
+                              |  из 
+                              span.totalSlides 
+                            .product-container__slider.new
+                              figure
+                               a(href="#"): img(data-lazy="" alt="")
+                              figure
+                               a(href="#"): img(data-lazy="" alt="")
+                          .product-container__name
+                            a(href="#").link-m
+                              |Maserati Spyder
+                            span(title="Премиум компания").medal-icon.tool: img(src="img/medal-icon.png", alt="")
+                          .product-container__city
+                            | Одесса
+                          .product-container__price.price-s
+                            |1,039,000 грн.
+                          
+                      .col-xs-12.col-sm-4.product-container
+                        .wrap
+                          .slider-wraper
+                            .slide-counter
+                              span.currentSlide 1
+                              |  из 
+                              span.totalSlides 
+                            .product-container__slider
+                              figure
+                               a(href="#"): img(data-lazy="img/similar-4.jpg" alt="")
+                              figure
+                               a(href="#"): img(data-lazy="img/similar-2.jpg" alt="")
+                          .product-container__name
+                            a(href="#").link-m
+                              |Maserati GrandTurismo
+                            span(title="Премиум компания").medal-icon.tool: img(src="img/medal-icon.png", alt="")
+                          .product-container__city
+                            |Днепропетровск
+                          .product-container__price.price-s
+                            |842,000 грн.
+                          
+                      .col-xs-12.col-sm-4.product-container
+                        .wrap
+                          .slider-wraper
+                            .slide-counter
+                              span.currentSlide 1
+                              |  из 
+                              span.totalSlides 
+                            .product-container__slider
+                              figure
+                               a(href="#"): img(data-lazy="img/similar-4.jpg" alt="")
+                              figure
+                               a(href="#"): img(data-lazy="img/similar-2.jpg" alt="")
+                          .product-container__name
+                            a(href="#").link-m
+                              |Maserati Spyder
+                            span(title="Премиум компания").medal-icon.tool: img(src="img/medal-icon.png", alt="")
+                          .product-container__city
+                            |Киев
+                          .product-container__price.price-s
+                            |675,000 грн.
+                          
+                      .col-xs-12.col-sm-4.product-container
+                        .wrap
+                          .slider-wraper
+                            .slide-counter
+                              span.currentSlide 1
+                              |  из 
+                              span.totalSlides 
+                            .product-container__slider
+                              figure
+                               a(href="#"): img(data-lazy="img/similar-4.jpg" alt="")
+                              figure
+                               a(href="#"): img(data-lazy="img/similar-2.jpg" alt="")
+                          .product-container__name
+                            a(href="#").link-m
+                              |Maserati Ghibli
+                            span(title="Премиум компания").medal-icon.tool: img(src="img/medal-icon.png", alt="")
+                          .product-container__city
+                            |Днепропетровск
+                          .product-container__price.price-s
+                            |842,000 грн.
+                      .col-xs-12.col-sm-4.product-container
+                        .wrap
+                          .slider-wraper
+                            .slide-counter
+                              span.currentSlide 1
+                              |  из 
+                              span.totalSlides 
+                            .product-container__slider
+                              figure
+                               a(href="#"): img(data-lazy="img/similar-4.jpg" alt="")
+                              figure
+                               a(href="#"): img(data-lazy="img/similar-2.jpg" alt="")
+                          .product-container__name
+                            a(href="#").link-m
+                              |Maserati Spyder
+                            span(title="Премиум компания").medal-icon.tool: img(src="img/medal-icon.png", alt="")
+                          .product-container__city
+                            |Киев
+                          .product-container__price.price-s
+                            |675,000 грн.
+                            
+                      .col-xs-12.col-sm-4.product-container
+                        .wrap
+                          .slider-wraper
+                            .slide-counter
+                              span.currentSlide 1
+                              |  из 
+                              span.totalSlides 
+                            .product-container__slider
+                              figure
+                               a(href="#"): img(data-lazy="img/similar-4.jpg" alt="")
+                              figure
+                               a(href="#"): img(data-lazy="img/similar-2.jpg" alt="")
+                          .product-container__name
+                            a(href="#").link-m
+                              |Maserati Spyder
+                            span(title="Премиум компания").medal-icon.tool: img(src="img/medal-icon.png", alt="")
+                          .product-container__city
+                            | Одесса
+                          .product-container__price.price-s
+                            |1,039,000 грн.
+                          
+                      .col-xs-12.col-sm-4.product-container
+                        .wrap
+                          .slider-wraper
+                            .slide-counter
+                              span.currentSlide 1
+                              |  из 
+                              span.totalSlides 
+                            .product-container__slider
+                              figure
+                               a(href="#"): img(data-lazy="img/similar-4.jpg" alt="")
+                              figure
+                               a(href="#"): img(data-lazy="img/similar-2.jpg" alt="")
+                          .product-container__name
+                            a(href="#").link-m
+                              |Maserati GrandTurismo
+                            span(title="Премиум компания").medal-icon.tool: img(src="img/medal-icon.png", alt="")
+                          .product-container__city
+                            |Днепропетровск
+                          .product-container__price.price-s
+                            |842,000 грн.
+                          
+                      .col-xs-12.col-sm-4.product-container
+                        .wrap
+                          .slider-wraper
+                            .slide-counter
+                              span.currentSlide 1
+                              |  из 
+                              span.totalSlides 
+                            .product-container__slider
+                              figure
+                               a(href="#"): img(data-lazy="img/similar-4.jpg" alt="")
+                              figure
+                               a(href="#"): img(data-lazy="img/similar-2.jpg" alt="")
+                          .product-container__name
+                            a(href="#").link-m
+                              |Maserati Spyder
+                            span(title="Премиум компания").medal-icon.tool: img(src="img/medal-icon.png", alt="")
+                          .product-container__city
+                            |Киев
+                          .product-container__price.price-s
+                            |675,000 грн.
+                          
+                      .col-xs-12.col-sm-4.product-container
+                        .wrap
+                          .slider-wraper
+                            .slide-counter
+                              span.currentSlide 1
+                              |  из 
+                              span.totalSlides 
+                            .product-container__slider
+                              figure
+                               a(href="#"): img(data-lazy="img/similar-4.jpg" alt="")
+                              figure
+                               a(href="#"): img(data-lazy="img/similar-2.jpg" alt="")
+                          .product-container__name
+                            a(href="#").link-m
+                              |Maserati Ghibli
+                            span(title="Премиум компания").medal-icon.tool: img(src="img/medal-icon.png", alt="")
+                          .product-container__city
+                            |Днепропетровск
+                          .product-container__price.price-s
+                            |842,000 грн.
+                            
+                      
+                    .pagination-block.text-center
+                      ul.pagination
+                        li
+                          a(href='#') 1
+                        li
+                          a(href='#') 2
+                        li
+                          a(href='#') 3
+                        li.active
+                          span 4
+                        li
+                          a(href='#') 5
+                        li
+                          a(href='#') ...
+                        li
+                          a(href='#') 182
+                      .pagination-block__controls
+                        a(href="#").pagination-block__prev 
+                          |←
+                          span Назад
+                        a(href="#").pagination-block__next 
+                          span Далее  
+                          |→
+                .text-section
+                  |Текст с описанием рубрики.
+                        
+      include ./partials/footer.jade
+      .show-results-tooltip
+        |Найдено: 
+        span.quantity 2940  
+        a(href="#").link-m.link-white показать
+    include ./partials/popups.jade
+    include ./partials/scripts.jade

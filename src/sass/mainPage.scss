@@ -1,0 +1,512 @@
+.categories{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  &>.container{
+    &>div[class^="col-"]{
+      padding: 0;
+    }
+  }
+  .categories-heading{
+    margin-bottom: 25px;
+  }
+  &__#{list}{
+    border-top: 1px solid #eaeaea;
+    padding-top: 30px;
+    margin-bottom: 30px;
+    text-align: left;
+    li{
+      display: block;
+      float: left;
+      width: 12.5%;
+      @include phone {
+        display: inline-block;
+        float: none;
+        width: 32%;
+        margin-bottom: 10px;
+        &:nth-last-child(-n+2){
+          display: none !important;
+        }
+      }
+    }
+    a{
+      text-align: center;
+      font-size: 13px;
+      font-weight: 400;
+      display: block;
+      &:hover{
+        .name{
+          border-bottom: 0;
+        }
+      }
+      figure{
+        display: block;
+        margin: 0 auto;
+        width: 130px;
+        height: 80px;
+        position: relative;
+        overflow: hidden;
+        @include mq(1023px) {
+          width: 95px;
+          height: 60px;
+        }
+        img{
+          width: 100%;
+        }
+      }
+      .name{
+        color: black;
+        border-bottom: 1px solid #eaeaea;
+      }
+      .quantity{
+        color: #666;
+        display: block;
+        margin: 0 auto;
+        margin-top: 10px;
+      }
+    }
+  }
+  .btn.all{
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: 700;
+  }
+}
+.mainGrid-block{
+  padding: 30px 0;
+  @include phone {
+    padding: 10px 0 10px;
+  }
+  &__mob-slider{
+    // display: none;
+    &.mob-device{
+      margin-bottom: 0!important;
+      @include phone {
+        overflow: hidden;
+        padding-bottom: 35px;
+      }
+      .mainGrid-block__item{
+        margin-bottom: 0 !important;
+        padding: 0px 5px !important;
+        @include phone {
+          padding: 0 !important;
+        }
+        .wrap{
+          height: auto !important;
+        }
+      }
+      .slick-dots{
+        @include phone {
+          bottom: 0;
+          left: 0;
+        }
+        li button:before{
+          font-size: 11px;
+        }
+      }
+      .slick-prev, .slick-next{
+        z-index: 2;
+        width: 30px;
+        height: 30px;
+        &::before{
+          font-family: "Material Design Icons";
+          opacity: 1;
+          font-size: 30px;
+          text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+        }
+      }
+      .slick-prev{
+        left: 4px;
+        z-index: 2;
+        &::before{
+          content: "\f141";
+        }
+        @include phone {
+          margin-top: -18px;
+        }
+      }
+      .slick-next{
+        right: 4px;
+        z-index: 2;
+        &::before{
+          content: '\f142';
+        }
+        @include phone {
+          margin-top: -18px;
+        }
+      }
+    }
+  }
+  &__#{item}{
+    float: left;
+    &.mainGrid-big{
+      width: 50%;
+      @include phone {
+        width: 100%;
+      }
+      &.right{
+        float: right;
+        @include mq(1023px) {
+          float: left;
+        }
+      }
+      .wrap{
+        min-height: 370px;
+        @include phone {
+          min-height: 190px;
+        }
+      }
+    }
+    &.mainGrid-small{
+      width: 25%;
+      @include mq(1023px) {
+        width: 50%;
+      }
+      @include phone {
+        width: 100%;
+      }
+    }
+    &:first-child{
+      // padding-bottom: 30px;
+      // // test
+      // padding-right: 15px;
+      // grid 10
+      padding-bottom: 10px;
+      padding-right: 5px;
+      @include mq(1023px) {
+        padding: 0;
+        margin-bottom: 30px;
+      }
+    }
+    &:nth-child(2){
+      // test
+      padding-left: 15px;
+      padding-right: 7px;
+      // grid 10
+      padding-left: 5px;
+      padding-right: 1px;
+      @include mq(1023px) {
+        padding: 0;
+        margin-bottom: 30px;
+      }
+    }
+    &:nth-child(3){
+      // test
+      padding-left: 23px;
+      // grid 10
+      padding-left: 8px;
+      @include mq(1023px) {
+        padding: 0;
+        margin-bottom: 30px;
+      }
+    }
+    &:nth-child(4){
+      padding-top: 30px;
+      // test
+      padding-left: 15px;
+      // grid 10
+      padding-top: 10px;
+      padding-left: 5px;
+      @include mq(1023px) {
+        padding: 0;
+        margin-bottom: 30px;
+      }
+    }
+    &:nth-child(5){
+      padding-right: 25px;
+      padding-left: 0;
+      // test
+      padding-right: 23px;
+      // grid 10
+      padding-left: 0;
+      padding-right: 8px;
+      @include mq(1023px) {
+        padding: 0;
+      }
+      @include phone {
+        margin-bottom: 30px;
+      }
+    }
+    &:last-child{
+      padding-right: 20px;
+      padding-left: 5px;
+      // test
+      padding-right: 15px;
+      padding-left: 7px;
+      // grid 10
+      padding-right: 5px;
+      padding-left: 2px;
+      @include mq(1023px) {
+        padding: 0;
+      }
+    }
+    &:nth-child(odd){
+      @include mq(1023px) {
+        padding-right: 15px;
+      }
+      @include phone {
+        padding: 0;
+      }
+    }
+    &:nth-child(even){
+      @include mq(1023px) {
+        padding-left: 15px;
+      }
+      @include phone {
+        padding: 0;
+      }
+    }
+    &__#{info}{
+      position: absolute;
+      left: 10px;
+      bottom: 10px;
+      color: white;
+      font-family: 'Roboto', sans-serif;
+      font-size: 13px;
+      &:hover{
+        color: #fff;
+      }
+      .name{
+        display: inline-block;
+        border-bottom: 1px solid rgba(255,255,255,.5);
+        &:hover{
+          border-bottom: 1px solid transparent;
+        }
+      }
+      .price{
+        font-weight: 700;
+        display: block;
+        margin-top: 10px;
+      }
+    }
+    .wrap{
+      position: relative;
+      display: block;
+      overflow: hidden;
+      background: #ddd;
+      box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.45);
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+      min-height: 170px;
+      @include phone {
+        min-height: 190px;
+      }
+      &.new{
+        &:after{
+          position: absolute;
+          content: "";
+          top: 0;
+          left: 0;
+          display: block;
+          width: 38px;
+          height: 48px;
+          background: url(../img/new.png) no-repeat;
+        }
+      }
+      &:before{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 70px;
+        background-image: linear-gradient(to top,rgba(0,0,0,.64) 0,rgba(0,0,0,.64) 25%,transparent 100%);
+      }
+    }
+    img{
+      width: 100%;
+    }
+  }
+}
+.company{
+  .product-container{
+    @include mq(1023px) {
+      margin-bottom: 30px;
+    }
+    &__#{name}{
+      a.link-m{
+        color: #000;
+        border-bottom: 1px solid #e6e6e6;
+        &:hover{
+          border-bottom: 0;
+        }
+      }
+    }
+    &__#{city}{
+      color: #666;
+    }
+    &__#{link}{
+      margin: 8px 10px 0;
+      padding-bottom: 12px;
+      line-height: normal;
+    }
+    .wrap{
+      &>a{
+        position: relative;
+        display: block;
+        &:before{
+          content: "";
+          left: 0;
+          position: absolute;
+          bottom: 0;
+          width: 100%;
+          height: 70px;
+          background-image: linear-gradient(to top,rgba(0,0,0,.64) 0,rgba(0,0,0,.64) 25%,transparent 100%);
+          z-index: 1;
+        }
+        .company-icon{
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          margin-top: -35px;
+          margin-left: -35px;
+          z-index: 1;
+          border-radius: 3px;
+          width: 70px;
+          height: 70px;
+        }
+      }
+    }
+  }
+}
+.brands{
+  padding: 30px 0 20px;
+  .brand-list{
+    margin-bottom: 35px;
+    li{
+      display: block;
+      float: left;
+      width: 12.5%;
+      @include phone {
+        display: inline-block;
+        float: none;
+        width: 32%;
+        margin-bottom: 15px;
+        &:nth-child(n+7){
+          display: none;
+        }
+      }
+    }
+    a{
+      text-align: center;
+      font-size: 13px;
+      font-weight: 400;
+      display: block;
+      &:hover{
+        .name{
+          border-bottom: 0;
+        }
+      }
+      figure{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        // width: 135px;
+        // height: 65px;
+        width: 110px;
+        height: 110px;
+        position: relative;
+        overflow: hidden;
+        @include mq(1023px) {
+          width: 95px;
+          height: 95px;
+        }
+        img{
+          width: 100%;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%,-50%);
+        }
+      }
+      .name{
+        color: black;
+        border-bottom: 1px solid #eaeaea;
+      }
+      .quantity{
+        color: #666;
+        display: block;
+        margin: 0 auto;
+        margin-top: 10px;
+      }
+    }
+  }
+}
+.news{
+  .product-container{
+    @include mq(1023px) {
+      margin-bottom: 30px;
+    }
+    &__#{name}{
+      margin-bottom: 10px;
+      a.link-m{
+        color: #000;
+        border-bottom: 1px solid #e6e6e6;
+        &:hover{
+          border-bottom: 0;
+        }
+      }
+    }
+    &__#{link}{
+      border-top: 1px solid #eaeaea;
+      margin: 0;
+      padding: 5px 10px 10px;
+      .tag{
+        position: relative;
+        margin-left: 24px;
+        &:before{
+          content: "";
+          position: absolute;
+          left: -24px;
+          top: 0;
+          display: block;
+          width: 14px;
+          height: 14px;
+          background: url('../img/tag.png') 0 0 no-repeat;
+        }
+      }
+    }
+  }
+}
+
+.about-project{
+  padding: 25px 0px 100px;
+  @include mq(1023px) {
+    padding-bottom: 35px;
+  }
+  @include phone {
+    padding-bottom: 30px;
+  }
+  &__#{item}{
+    font-size: 13px;
+    &:first-child{
+      p{
+        padding-right: 5px;
+      }
+      @include mq(1023px) {
+        margin-bottom: 30px;
+        p{
+          padding: 0;
+        }
+      }
+    }
+    &:last-child{
+      p{
+        // padding-left: 5px;
+      }
+      @include mq(1023px) {
+        p{padding: 0;}
+      }
+    }
+    h5{
+      font-weight: 700;
+      margin: 0;
+      margin-bottom: 20px;
+    }
+    p{
+      font-weight: 400;
+      line-height: 15px;
+      &+p{
+        margin-top: 15px;
+      }
+    }
+  }
+}

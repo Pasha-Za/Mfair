@@ -1,0 +1,74 @@
+doctype html
+html
+  include ./partials/head.jade
+  body
+    include ./partials/debug.jade
+    #wrapper
+      #content
+        include ./partials/headerLK.jade
+                    
+        main.content.user-account
+          .container
+            ol.breadcrumb
+              li: a(href='#') Главная
+              li: a(href='#') Кабинет
+              li.active Сообщения
+            h1.heading-title
+              |Сообщения
+              
+          section.lk-wrap
+            .container
+              .row
+                .col-xs-12.col-md-7.messageBlock.single
+                  .media
+                    .media-body
+                      h4.media-heading 
+                        |Продажа lamborghini Aventador LP-750
+                      a(href="#").link-m
+                        |Показать объявление
+                    .media-right
+                      a(href='#')
+                        img.media-object(src='img/gal-2.jpg', alt='...')
+                .col-xs-12.col-md-7.messageBlock.messageBlock_full
+                  .media
+                    .media-left
+                      a(href='#')
+                        img.media-object(src='img/no-foto-avatar.jpg', alt='...')
+                    .media-body
+                      .messageBlock__user
+                        |Анатолий Сухоруков, <time class="date">17 августа 2016, 17:35</time>
+                      p.messageBlock__text
+                        |Звонил по поводу покупки Mercedes-Benz S600 AMG мне так и не перезвонили авто есть в наличии, завтра можно подьехать посмотреть?
+                      a(href="#").link-m.link-red Заблокировать
+                      
+                .col-xs-12.col-md-7.messageBlock.messageBlock_full.user
+                  .media
+                    .media-left
+                      a(href='#')
+                        img.media-object(src='img/user-photo.jpg', alt='...')
+                    .media-body
+                      .messageBlock__user
+                        |Ваш ответ, <time class="date">17 августа 2016, 17:35</time>
+                      p.messageBlock__text
+                        |Да, автомобиль не продан, можете подьезжать в автосалон и смотреть в любое удобное для вас врем.
+                      a(href="#").link-m.link-red Заблокировать
+                .clearfix
+                .read-msg Прочитано
+                .col-xs-12.col-md-7
+                  form(action="", method="post").answer-on-msg
+                    .form-group
+                      label: span Ответить:
+                      textarea(name="name", rows="8", cols="40")
+                      a(href="#").link-m Прикрепить файл
+                      input(type="file", name="name", value="").hidden
+                      small.label-subtitle.
+                        Типы файлов, которые принимаются:<br/>jpg, jpeg, png, doc, pdf, gif, zip, rar, tar, html, swf, txt, xls, docx, xlsx, odt
+                      button(type="", name="button").btn.btn-default Отправить
+                      
+                    
+                    
+                    
+                      
+      include ./partials/footer.jade
+    include ./partials/popups.jade
+    include ./partials/scripts.jade

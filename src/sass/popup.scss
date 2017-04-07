@@ -1,0 +1,223 @@
+.tooltip_templates {
+  display: none;
+  a{
+    color: #000;
+    &:hover{
+      color: red;
+    }
+  }
+}
+.complain-list{
+  text-align: left;
+  a{
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 25px;
+    &:hover{
+      span{
+        border-bottom: 0;
+      }
+    }
+    span{
+      border-bottom: 1px dotted #d9d9d9;
+    }
+  }
+}
+.tooltipster-base{
+  pointer-events: auto;
+}
+.tooltipster-light {
+    // width: 170px;
+    background-color: white;
+    border: 1px solid #e3e3e3;
+    box-shadow: 0 0 5px rgba(27, 27, 27, 0.15);
+    .tooltipster-content{
+      font-size: 13px;
+      text-align: center;
+    }
+}
+.modal-backdrop{
+  background: none;
+}
+.custom-modal{
+  .select-brand{
+    line-height: 14px;
+  }
+  .modal-dialog{
+    @include mqMin(768px){
+      top: 50%;
+      transform: translateY(-50%)!important;
+      margin: 0 auto !important;
+    }
+    @include mqMin(992px){
+      width: 880px;
+    }
+    .modal-content{
+      border-radius: 0;
+      box-shadow: 0 0 5px rgba(27, 27, 27, 0.15);
+      border: none;
+    }
+    .modal-body{
+      padding: 10px;
+    }
+    .modal-header{
+      color: black;
+      font-family: 'Roboto', sans-serif;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 20px;
+      background: #f7f7fa;
+      padding: 14px 10px;
+      position: relative;
+      h4{
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 20px;
+      }
+      .close{
+        position: absolute;
+        top: 0;
+        right: 8px;
+        color: #000;
+        font-size: 26px;
+        opacity: 1;
+        height: 49px;
+      }
+    }
+    .modal-footer{
+      background: #f7f7fa;
+      text-align: left;
+      padding: 9px 10px;
+    }
+    .modal-list{
+      &>ul{
+        column-count: 3;
+        @include tablet{
+          column-count: 2;
+        }
+        @include phone{
+          column-count: 1;
+        }
+      }
+      li{
+        &+li{
+          margin-top: 20px;
+        }
+      }
+      &__block{
+        display: table;
+        position: relative;
+        &>*{
+          display: table-cell;
+        }
+      }
+      &__letter{
+        color: black;
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 15px;
+        text-transform: uppercase;
+        position: absolute;
+        left: 0;
+        top: 2px;
+      }
+      &__inputs{
+        padding-left: 21px;
+        .form-group{
+          margin: 0;
+        }
+        .custom{
+          font-size: 13px;
+          font-weight: 400;
+          color: black;
+          display: inline-block;
+          position: relative;
+          padding-left: 25px;
+          &::before{
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+            display: block;
+            width: 15px;
+            height: 15px;
+            background-color: #fcfcfc;
+            border: 1px solid #edeced;
+          }
+          &:hover{
+            cursor: pointer;
+          }
+          &.checked{
+            &::after{
+              content: "\f140";
+              position: absolute;
+              top: 50%;
+              -webkit-transform: translateY(-50%);
+              -ms-transform: translateY(-50%);
+              transform: translateY(-50%);
+              left: 0;
+              font-family: "Material Design Icons";
+              font-size: 15px;
+              font-weight: bold;
+            }
+          }
+          .quantity{
+            color: #828282;
+            line-height: 20px;
+          }
+          &>input{
+            visibility: hidden;
+            position: absolute;
+            z-index: -2;
+          }
+        }
+      }
+      a{
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 12px;
+        display: inline-block;
+        margin-bottom: 10px;
+        color: #000;
+        .quantity{
+          color: #828282;
+        }
+      }
+    }
+    // equipment
+    .equipment-list{
+      &>ul{
+        &>li{
+          border-bottom: 1px solid #eee;
+          padding-bottom: 15px;
+          &:last-child{
+            border-bottom: none;
+          }
+        }
+      }
+      &__block{
+        font-size: 13px;
+        h5{
+          color: black;
+          font-weight: 700;
+          margin-top: 0;
+          font-size: 13px;
+        }
+        ul{
+          list-style-type: disc;
+          margin-left: 15px;
+          li{
+            color: #555;
+            font-weight: 400;
+            &+li{
+              margin-top: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
